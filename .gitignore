@@ -5,6 +5,8 @@
 !.gitignore
 !local_codes/
 !dlp/
+!README.md
+
 
 # Even if they are in subdirectories
 !local_codes/**

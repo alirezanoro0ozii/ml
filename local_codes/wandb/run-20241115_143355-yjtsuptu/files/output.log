@@ -35,7 +35,7 @@ Val Confusion Matrix:
  [    0   256     0     0]
  [    0 31660     0     0]
  [    0    84     0     0]]
-  8%|▊         | 7931/100000 [22:19<4:31:16,  5.66it/s]  
+ 12%|█▏        | 12351/100000 [35:22<3:53:45,  6.25it/s]  
 Epoch [5000/100000]
 Train Loss: 0.7249, Train Accuracy: 0.5000
 Train F1 (micro): 0.5000, Train F1 (macro): 0.1670
@@ -51,3 +51,18 @@ Val Confusion Matrix:
  [    0   256     0     0]
  [    0 31660     0     0]
  [    0    84     0     0]]
+Epoch [10000/100000]
+Train Loss: 0.7180, Train Accuracy: 0.5175
+Train F1 (micro): 0.5175, Train F1 (macro): 0.2073
+Train Confusion Matrix:
+[[    0     0     0     0]
+ [    2 86515 62050     1]
+ [    1 91025 79099     0]
+ [    0   638   668     0]]
+Val Loss: 0.6991, Val Accuracy: 0.9894
+Val F1 (micro): 0.9894, Val F1 (macro): 0.3316
+Val Confusion Matrix:
+[[    0     0     0     0]
+ [    0     0   256     0]
+ [    0     0 31660     0]
+ [    0     0    84     0]]
