@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!local/
+!dlp/
+
+# Even if they are in subdirectories
+!local/**
+!dlp/**
