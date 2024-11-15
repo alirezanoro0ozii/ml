@@ -1,0 +1,20 @@
+{"time":"2024-11-12T08:15:07.863382299Z","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-12T08:15:07.863410319Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241112_081506-9vfvculs/logs/debug-core.log"}
+{"time":"2024-11-12T08:15:07.988129238Z","level":"INFO","msg":"created new stream","id":"9vfvculs"}
+{"time":"2024-11-12T08:15:07.988180438Z","level":"INFO","msg":"stream: started","id":"9vfvculs"}
+{"time":"2024-11-12T08:15:07.988256548Z","level":"INFO","msg":"sender: started","stream_id":"9vfvculs"}
+{"time":"2024-11-12T08:15:07.988292159Z","level":"INFO","msg":"handler: started","stream_id":{"value":"9vfvculs"}}
+{"time":"2024-11-12T08:15:07.988260008Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"9vfvculs"}}
+{"time":"2024-11-12T08:15:08.206006462Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-12T08:15:33.703914431Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-12T08:15:33.705186001Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-12T08:15:33.803426588Z","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-11-12T08:15:33.803459928Z","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-11-12T08:15:33.803469628Z","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-11-12T08:15:34.148173353Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-12T08:15:34.246622829Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-11-12T08:15:35.266504206Z","level":"INFO","msg":"stream: closing","id":"9vfvculs"}
+{"time":"2024-11-12T08:15:35.266550556Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"9vfvculs"}}
+{"time":"2024-11-12T08:15:35.266582146Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"9vfvculs"}}
+{"time":"2024-11-12T08:15:35.266677756Z","level":"INFO","msg":"sender: closed","stream_id":"9vfvculs"}
+{"time":"2024-11-12T08:15:35.268894307Z","level":"INFO","msg":"stream: closed","id":"9vfvculs"}

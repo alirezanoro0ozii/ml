@@ -1,0 +1,38 @@
+model: 2.012164 M parameters
+EnhancedProteinCNN(
+  (embedding): Embedding(25, 128, padding_idx=0)
+  (feature_dense): Linear(in_features=3, out_features=128, bias=True)
+  (global_feature_dense): Linear(in_features=28, out_features=128, bias=True)
+  (convs): ModuleList(
+    (0): Conv1d(128, 256, kernel_size=(3,), stride=(1,), padding=same)
+    (1): Conv1d(128, 256, kernel_size=(5,), stride=(1,), padding=same)
+    (2): Conv1d(128, 256, kernel_size=(7,), stride=(1,), padding=same)
+    (3): Conv1d(128, 256, kernel_size=(9,), stride=(1,), padding=same)
+    (4): Conv1d(128, 256, kernel_size=(11,), stride=(1,), padding=same)
+  )
+  (batch_norms): ModuleList(
+    (0-4): 5 x BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (fc1): Linear(in_features=1408, out_features=512, bias=True)
+  (fc2): Linear(in_features=512, out_features=256, bias=True)
+  (fc3): Linear(in_features=256, out_features=4, bias=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (layer_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+)
+Successfully loaded checkpoint from epoch 4999
+Metrics at checkpoint: {'train_loss': 0.00013792022466659545, 'train_accuracy': 0.640625, 'train_f1_micro': 0.640625, 'train_f1_macro': 0.6333748443337484, 'train_confusion_matrix': array([[ 0,  0,  0,  0],
+       [ 0, 25,  7,  0],
+       [ 0, 16, 16,  0],
+       [ 0,  0,  0,  0]]), 'val_loss': 0.7222208807468414, 'val_accuracy': 0.008, 'val_f1_micro': 0.008, 'val_f1_macro': 0.005291005291005291, 'val_confusion_matrix': array([[    0,     0,     0,     0],
+       [    0,   256,     0,     0],
+       [    0, 31660,     0,     0],
+       [    0,    84,     0,     0]]), 'epoch': 5000, 'current_portion': 0.5, 'lr': 5.569775901376317e-06}
+  0%|          | 0/100000 [00:05<?, ?it/s]
+Epoch [5000/100000]
+Train Loss: 0.0001, Train Accuracy: 0.5469
+Train F1 (micro): 0.5469, Train F1 (macro): 0.5331
+Train Confusion Matrix:
+[[ 0  0  0  0]
+ [ 0 23  9  0]
+ [ 0 20 12  0]
+ [ 0  0  0  0]]

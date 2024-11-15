@@ -1,0 +1,24 @@
+{"time":"2024-11-12T15:38:36.328889728Z","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-12T15:38:36.328931628Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241112_153836-wcdbwxd2/logs/debug-core.log"}
+{"time":"2024-11-12T15:38:36.452369317Z","level":"INFO","msg":"created new stream","id":"wcdbwxd2"}
+{"time":"2024-11-12T15:38:36.452412337Z","level":"INFO","msg":"stream: started","id":"wcdbwxd2"}
+{"time":"2024-11-12T15:38:36.452474227Z","level":"INFO","msg":"handler: started","stream_id":{"value":"wcdbwxd2"}}
+{"time":"2024-11-12T15:38:36.452465047Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"wcdbwxd2"}}
+{"time":"2024-11-12T15:38:36.452582997Z","level":"INFO","msg":"sender: started","stream_id":"wcdbwxd2"}
+{"time":"2024-11-12T15:38:36.742877365Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-12T15:38:37.054007394Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-12T15:39:28.651893558Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-12T15:39:29.774789453Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-12T15:43:04.182889361Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-12T15:43:04.329437421Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-12T15:43:04.330303751Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-12T15:43:04.470447218Z","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-11-12T15:43:04.470475928Z","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-11-12T15:43:04.470485908Z","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-11-12T15:43:04.760794196Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-12T15:43:05.050257594Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-11-12T15:43:06.06990858Z","level":"INFO","msg":"stream: closing","id":"wcdbwxd2"}
+{"time":"2024-11-12T15:43:06.06994616Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"wcdbwxd2"}}
+{"time":"2024-11-12T15:43:06.06997305Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"wcdbwxd2"}}
+{"time":"2024-11-12T15:43:06.070030931Z","level":"INFO","msg":"sender: closed","stream_id":"wcdbwxd2"}
+{"time":"2024-11-12T15:43:06.071043211Z","level":"INFO","msg":"stream: closed","id":"wcdbwxd2"}

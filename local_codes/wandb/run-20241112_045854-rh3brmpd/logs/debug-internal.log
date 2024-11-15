@@ -1,0 +1,20 @@
+{"time":"2024-11-12T04:58:54.023592757Z","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-12T04:58:54.023631477Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241112_045854-rh3brmpd/logs/debug-core.log"}
+{"time":"2024-11-12T04:58:54.147071686Z","level":"INFO","msg":"created new stream","id":"rh3brmpd"}
+{"time":"2024-11-12T04:58:54.147115826Z","level":"INFO","msg":"stream: started","id":"rh3brmpd"}
+{"time":"2024-11-12T04:58:54.147294186Z","level":"INFO","msg":"sender: started","stream_id":"rh3brmpd"}
+{"time":"2024-11-12T04:58:54.147213356Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"rh3brmpd"}}
+{"time":"2024-11-12T04:58:54.147293126Z","level":"INFO","msg":"handler: started","stream_id":{"value":"rh3brmpd"}}
+{"time":"2024-11-12T04:58:54.423646898Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-12T04:58:54.622443893Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-12T04:58:54.729298714Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-12T04:58:54.916604493Z","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-11-12T04:58:54.916633883Z","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-11-12T04:58:54.916645083Z","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-11-12T04:58:55.209072963Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-12T04:58:55.366059297Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-11-12T04:58:56.387519935Z","level":"INFO","msg":"stream: closing","id":"rh3brmpd"}
+{"time":"2024-11-12T04:58:56.387556775Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"rh3brmpd"}}
+{"time":"2024-11-12T04:58:56.387593645Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"rh3brmpd"}}
+{"time":"2024-11-12T04:58:56.387660365Z","level":"INFO","msg":"sender: closed","stream_id":"rh3brmpd"}
+{"time":"2024-11-12T04:58:56.389389785Z","level":"INFO","msg":"stream: closed","id":"rh3brmpd"}

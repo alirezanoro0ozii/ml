@@ -1,0 +1,69 @@
+Some weights of EsmModel were not initialized from the model checkpoint at facebook/esm1b_t33_650M_UR50S and are newly initialized: ['esm.pooler.dense.bias', 'esm.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+model: 653.014425 M parameters
+ESM1b(
+  (esm): EsmModel(
+    (embeddings): EsmEmbeddings(
+      (word_embeddings): Embedding(33, 1280, padding_idx=1)
+      (layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+      (dropout): Dropout(p=0.0, inplace=False)
+      (position_embeddings): Embedding(1026, 1280, padding_idx=1)
+    )
+    (encoder): EsmEncoder(
+      (layer): ModuleList(
+        (0-32): 33 x EsmLayer(
+          (attention): EsmAttention(
+            (self): EsmSelfAttention(
+              (query): Linear(in_features=1280, out_features=1280, bias=True)
+              (key): Linear(in_features=1280, out_features=1280, bias=True)
+              (value): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): EsmSelfOutput(
+              (dense): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          )
+          (intermediate): EsmIntermediate(
+            (dense): Linear(in_features=1280, out_features=5120, bias=True)
+          )
+          (output): EsmOutput(
+            (dense): Linear(in_features=5120, out_features=1280, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+          (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+      (emb_layer_norm_after): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+    )
+    (pooler): EsmPooler(
+      (dense): Linear(in_features=1280, out_features=1280, bias=True)
+      (activation): Tanh()
+    )
+    (contact_head): EsmContactPredictionHead(
+      (regression): Linear(in_features=660, out_features=1, bias=True)
+      (activation): Sigmoid()
+    )
+  )
+  (layer1): Linear(in_features=1280, out_features=512, bias=True)
+  (relu): ReLU()
+  (layer2): Linear(in_features=512, out_features=4, bias=True)
+)
+  0%|          | 19/10000 [03:31<30:54:35, 11.15s/it]
+Epoch [5/10000], Train Loss: 0.3350
+[[   5   20    0]
+ [ 138 1425    0]
+ [   3    9    0]]
+val Loss: 0.7741, val Accuracy: 0.8938, val F1 Score (micro): 0.8938, , val F1 Score (macro): 0.3344
+Epoch [10/10000], Train Loss: 0.0686
+[[  25    0    0]
+ [1544   19    0]
+ [  12    0    0]]
+val Loss: 0.9137, val Accuracy: 0.0275, val F1 Score (micro): 0.0275, , val F1 Score (macro): 0.0184
+Epoch [15/10000], Train Loss: 0.0684
+[[   0   25    0]
+ [   0 1563    0]
+ [   0   12    0]]
+val Loss: 0.5563, val Accuracy: 0.9769, val F1 Score (micro): 0.9769, , val F1 Score (macro): 0.3294
+Epoch [20/10000], Train Loss: 0.0375

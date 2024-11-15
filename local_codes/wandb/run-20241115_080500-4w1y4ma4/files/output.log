@@ -1,0 +1,159 @@
+Some weights of EsmModel were not initialized from the model checkpoint at facebook/esm1b_t33_650M_UR50S and are newly initialized: ['esm.pooler.dense.bias', 'esm.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+model: 653.014425 M parameters
+ESM1b(
+  (esm): EsmModel(
+    (embeddings): EsmEmbeddings(
+      (word_embeddings): Embedding(33, 1280, padding_idx=1)
+      (layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+      (dropout): Dropout(p=0.0, inplace=False)
+      (position_embeddings): Embedding(1026, 1280, padding_idx=1)
+    )
+    (encoder): EsmEncoder(
+      (layer): ModuleList(
+        (0-32): 33 x EsmLayer(
+          (attention): EsmAttention(
+            (self): EsmSelfAttention(
+              (query): Linear(in_features=1280, out_features=1280, bias=True)
+              (key): Linear(in_features=1280, out_features=1280, bias=True)
+              (value): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): EsmSelfOutput(
+              (dense): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          )
+          (intermediate): EsmIntermediate(
+            (dense): Linear(in_features=1280, out_features=5120, bias=True)
+          )
+          (output): EsmOutput(
+            (dense): Linear(in_features=5120, out_features=1280, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+          (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+      (emb_layer_norm_after): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+    )
+    (pooler): EsmPooler(
+      (dense): Linear(in_features=1280, out_features=1280, bias=True)
+      (activation): Tanh()
+    )
+    (contact_head): EsmContactPredictionHead(
+      (regression): Linear(in_features=660, out_features=1, bias=True)
+      (activation): Sigmoid()
+    )
+  )
+  (layer1): Linear(in_features=1280, out_features=512, bias=True)
+  (relu): ReLU()
+  (layer2): Linear(in_features=512, out_features=4, bias=True)
+)
+Some weights of EsmModel were not initialized from the model checkpoint at facebook/esm1b_t33_650M_UR50S and are newly initialized: ['esm.pooler.dense.bias', 'esm.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+model: 653.014425 M parameters
+ESM1b(
+  (esm): EsmModel(
+    (embeddings): EsmEmbeddings(
+      (word_embeddings): Embedding(33, 1280, padding_idx=1)
+      (layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+      (dropout): Dropout(p=0.0, inplace=False)
+      (position_embeddings): Embedding(1026, 1280, padding_idx=1)
+    )
+    (encoder): EsmEncoder(
+      (layer): ModuleList(
+        (0-32): 33 x EsmLayer(
+          (attention): EsmAttention(
+            (self): EsmSelfAttention(
+              (query): Linear(in_features=1280, out_features=1280, bias=True)
+              (key): Linear(in_features=1280, out_features=1280, bias=True)
+              (value): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): EsmSelfOutput(
+              (dense): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          )
+          (intermediate): EsmIntermediate(
+            (dense): Linear(in_features=1280, out_features=5120, bias=True)
+          )
+          (output): EsmOutput(
+            (dense): Linear(in_features=5120, out_features=1280, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+          (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+      (emb_layer_norm_after): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+    )
+    (pooler): EsmPooler(
+      (dense): Linear(in_features=1280, out_features=1280, bias=True)
+      (activation): Tanh()
+    )
+    (contact_head): EsmContactPredictionHead(
+      (regression): Linear(in_features=660, out_features=1, bias=True)
+      (activation): Sigmoid()
+    )
+  )
+  (layer1): Linear(in_features=1280, out_features=512, bias=True)
+  (relu): ReLU()
+  (layer2): Linear(in_features=512, out_features=4, bias=True)
+)
+  0%|          | 1/100000 [00:03<104:49:39,  3.77s/it]
+tensor([[ 0.1558, -0.0228, -0.0137, -0.0933],
+        [ 0.1153,  0.0006, -0.0217, -0.0371],
+        [ 0.1080, -0.0046, -0.0151, -0.0388],
+        [ 0.1173,  0.0257, -0.0208, -0.0064],
+        [ 0.0993, -0.0100, -0.0645, -0.0509],
+        [ 0.1217, -0.0335, -0.0278, -0.0941],
+        [ 0.1158,  0.0152, -0.0258, -0.0259],
+        [ 0.1015, -0.0028, -0.0386, -0.0459],
+        [ 0.1133,  0.0227, -0.0366, -0.0595],
+        [ 0.1356,  0.0054, -0.0254, -0.0337],
+        [ 0.1212,  0.0034, -0.0249, -0.0764],
+        [ 0.1380, -0.0057, -0.0086, -0.0804],
+        [ 0.1286, -0.0307, -0.0371, -0.1046],
+        [ 0.1070,  0.0181, -0.0302, -0.0503],
+        [ 0.1392, -0.0427, -0.0146, -0.1049],
+        [ 0.1312, -0.0274, -0.0119, -0.0986]], device='cuda:0',
+       grad_fn=<AddmmBackward0>)
+tensor([1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2], device='cuda:0')
+tensor([[-0.5108,  0.7539,  0.3118, -0.4692],
+        [-0.4804,  0.7250,  0.3942, -0.4234],
+        [-0.3623,  0.5007,  0.4558, -0.3474],
+        [-0.5788,  0.9636,  0.1633, -0.4521],
+        [-0.5025,  0.8365,  0.2183, -0.3929],
+        [-0.4804,  0.8507,  0.2299, -0.3877],
+        [-0.3788,  0.5251,  0.4514, -0.3659],
+        [-0.5122,  0.8640,  0.2116, -0.4004],
+        [-0.3963,  0.5393,  0.4778, -0.3596],
+        [-0.4671,  0.6370,  0.4481, -0.4542],
+        [-0.3042,  0.4061,  0.5366, -0.3788],
+        [-0.4948,  0.5818,  0.6917, -0.4697],
+        [-0.6291,  1.0091,  0.2493, -0.4932],
+        [-0.6131,  0.8513,  0.4626, -0.5206],
+        [-0.3981,  0.6606,  0.1644, -0.3247],
+        [-0.4709,  0.5442,  0.6166, -0.4668]], device='cuda:0',
+       grad_fn=<AddmmBackward0>)
+tensor([1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2], device='cuda:0')
+tensor([[-0.9858,  1.4945,  0.7561, -1.0415],
+        [-0.4814,  0.8050,  0.5461, -0.6793],
+        [-0.6843,  1.0975,  0.6235, -0.8059],
+        [-0.6288,  1.0416,  0.6098, -0.7929],
+        [-0.8503,  1.3153,  0.6904, -0.9285],
+        [-0.7680,  1.1888,  0.6858, -0.8792],
+        [-0.4329,  0.7156,  0.5261, -0.6444],
+        [-1.3504,  2.0724,  0.8450, -1.3312],
+        [-0.8604,  1.3545,  0.7109, -0.9572],
+        [-0.7623,  1.1419,  0.7133, -0.8508],
+        [-0.4097,  0.7302,  0.4672, -0.6287],
+        [-1.0335,  1.5728,  0.7549, -1.0701],
+        [-1.3149,  1.9963,  0.8579, -1.3154],
+        [-0.8067,  1.2608,  0.7177, -0.9277],
+        [-0.9832,  1.4429,  0.8437, -1.0149],
+        [-0.9261,  1.3983,  0.7391, -0.9758]], device='cuda:0',
+       grad_fn=<AddmmBackward0>)
+tensor([1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2], device='cuda:0')

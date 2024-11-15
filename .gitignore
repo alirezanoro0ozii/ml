@@ -3,9 +3,9 @@
 
 # But not these files...
 !.gitignore
-!local/
+!local_codes/
 !dlp/
 
 # Even if they are in subdirectories
-!local/**
+!local_codes/**
 !dlp/**

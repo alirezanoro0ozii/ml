@@ -1,0 +1,8 @@
+{"time":"2024-11-14T16:43:20.107417339Z","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-14T16:43:20.107454419Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241114_164318-7cyp1qke/logs/debug-core.log"}
+{"time":"2024-11-14T16:43:20.230996388Z","level":"INFO","msg":"created new stream","id":"7cyp1qke"}
+{"time":"2024-11-14T16:43:20.231048658Z","level":"INFO","msg":"stream: started","id":"7cyp1qke"}
+{"time":"2024-11-14T16:43:20.231111778Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"7cyp1qke"}}
+{"time":"2024-11-14T16:43:20.231183128Z","level":"INFO","msg":"sender: started","stream_id":"7cyp1qke"}
+{"time":"2024-11-14T16:43:20.231232348Z","level":"INFO","msg":"handler: started","stream_id":{"value":"7cyp1qke"}}
+{"time":"2024-11-14T16:43:20.490889372Z","level":"INFO","msg":"Starting system monitor"}

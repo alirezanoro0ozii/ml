@@ -1,0 +1,11 @@
+{
+  "os":  "Linux-6.5.0-28-generic-x86_64-with-glibc2.35",
+  "python":  "3.10.14",
+  "startedAt":  "2024-11-05T17:18:41.514878Z",
+  "program":  "Alireza/local_codes/data_playground.ipynb",
+  "email":  "alirezanor@310.ai",
+  "root":  "/home/aac/Alireza/local_codes",
+  "host":  "c51fdc19-7acf-48cb-af9e-874778d9f7e3-59d7fcccfd-l8rjm",
+  "username":  "root",
+  "executable":  "/opt/conda/envs/py_3.10/bin/python"
+}

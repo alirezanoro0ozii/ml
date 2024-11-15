@@ -1,0 +1,1 @@
+{"confusion matrix":[[0,1,0],[0,30,0],[0,1,0]],"val acc":0.9375,"val F1 (macro)":0.3225806451612903,"_wandb":{"runtime":174},"_timestamp":1.7315288772407737e+09,"_step":24,"val F1 (micro)":0.9375,"_runtime":174.579862086,"train loss":7.240462303161621e-05,"val loss":0.3206504099071026}

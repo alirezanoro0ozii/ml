@@ -1,0 +1,22 @@
+{"time":"2024-11-13T19:41:31.679021604Z","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-13T19:41:31.679070394Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241113_194131-41gufcke/logs/debug-core.log"}
+{"time":"2024-11-13T19:41:31.802778513Z","level":"INFO","msg":"created new stream","id":"41gufcke"}
+{"time":"2024-11-13T19:41:31.802847323Z","level":"INFO","msg":"stream: started","id":"41gufcke"}
+{"time":"2024-11-13T19:41:31.803020953Z","level":"INFO","msg":"sender: started","stream_id":"41gufcke"}
+{"time":"2024-11-13T19:41:31.802959493Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"41gufcke"}}
+{"time":"2024-11-13T19:41:31.803084103Z","level":"INFO","msg":"handler: started","stream_id":{"value":"41gufcke"}}
+{"time":"2024-11-13T19:41:32.267025624Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-13T19:41:32.465935069Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-13T19:42:16.894164664Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-13T19:42:16.938147235Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-13T19:42:16.939262346Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-13T19:42:17.089204187Z","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-11-13T19:42:17.089235577Z","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-11-13T19:42:17.089244977Z","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-11-13T19:42:17.427745829Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-13T19:42:17.542363203Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-11-13T19:42:18.56289901Z","level":"INFO","msg":"stream: closing","id":"41gufcke"}
+{"time":"2024-11-13T19:42:18.56291594Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"41gufcke"}}
+{"time":"2024-11-13T19:42:18.56293203Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"41gufcke"}}
+{"time":"2024-11-13T19:42:18.56296629Z","level":"INFO","msg":"sender: closed","stream_id":"41gufcke"}
+{"time":"2024-11-13T19:42:18.564847251Z","level":"INFO","msg":"stream: closed","id":"41gufcke"}

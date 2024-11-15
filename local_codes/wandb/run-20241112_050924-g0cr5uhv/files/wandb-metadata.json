@@ -1,0 +1,11 @@
+{
+  "os": "Linux-6.5.0-35-generic-x86_64-with-glibc2.35",
+  "python": "3.10.14",
+  "startedAt": "2024-11-12T05:09:24.839239Z",
+  "program": "Alireza/local_codes/9_esm_embedding_classifier.ipynb",
+  "email": "alirezanor@310.ai",
+  "root": "/home/aac/Alireza/local_codes",
+  "host": "47f1c2b6-7872-4206-a993-a4263e59675f-5b6dc6469b-tg6n8",
+  "username": "root",
+  "executable": "/opt/conda/envs/py_3.10/bin/python"
+}

@@ -1,0 +1,38 @@
+{"time":"2024-11-15T13:46:32.417711521Z","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-15T13:46:32.417757961Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241115_134632-dmoy51i7/logs/debug-core.log"}
+{"time":"2024-11-15T13:46:32.542292641Z","level":"INFO","msg":"created new stream","id":"dmoy51i7"}
+{"time":"2024-11-15T13:46:32.542435111Z","level":"INFO","msg":"stream: started","id":"dmoy51i7"}
+{"time":"2024-11-15T13:46:32.542542661Z","level":"INFO","msg":"sender: started","stream_id":"dmoy51i7"}
+{"time":"2024-11-15T13:46:32.542502751Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"dmoy51i7"}}
+{"time":"2024-11-15T13:46:32.542550971Z","level":"INFO","msg":"handler: started","stream_id":{"value":"dmoy51i7"}}
+{"time":"2024-11-15T13:46:32.727352889Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-15T13:46:32.926644604Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-15T13:46:32.926744114Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-15T13:46:32.926757084Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-15T13:46:32.926766474Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-15T13:46:34.306761692Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-15T13:46:34.314686736Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-15T13:46:36.430720755Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-15T13:46:36.437622958Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-15T13:46:36.56727961Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-15T13:46:42.384476224Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-15T13:46:42.386357655Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-15T13:46:43.272720227Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-15T13:46:43.314009967Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-15T13:46:44.081056413Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-15T13:46:44.141336012Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-15T13:48:00.029433978Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-15T13:48:00.397996024Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-15T13:49:22.199417739Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-15T13:49:23.71104182Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-15T13:49:23.711902121Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-15T13:49:23.840354882Z","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-11-15T13:49:23.840400582Z","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-11-15T13:49:23.840411522Z","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-11-15T13:49:24.160687505Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-15T13:49:24.271807508Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-11-15T13:49:25.293221445Z","level":"INFO","msg":"stream: closing","id":"dmoy51i7"}
+{"time":"2024-11-15T13:49:25.293267815Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"dmoy51i7"}}
+{"time":"2024-11-15T13:49:25.293310695Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"dmoy51i7"}}
+{"time":"2024-11-15T13:49:25.293351635Z","level":"INFO","msg":"sender: closed","stream_id":"dmoy51i7"}
+{"time":"2024-11-15T13:49:25.295333606Z","level":"INFO","msg":"stream: closed","id":"dmoy51i7"}
