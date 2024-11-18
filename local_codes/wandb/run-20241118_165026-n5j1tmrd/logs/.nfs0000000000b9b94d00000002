@@ -1,0 +1,21 @@
+{"time":"2024-11-18T16:50:26.117521679Z","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-18T16:50:26.117562059Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241118_165026-n5j1tmrd/logs/debug-core.log"}
+{"time":"2024-11-18T16:50:26.237908497Z","level":"INFO","msg":"created new stream","id":"n5j1tmrd"}
+{"time":"2024-11-18T16:50:26.237968137Z","level":"INFO","msg":"stream: started","id":"n5j1tmrd"}
+{"time":"2024-11-18T16:50:26.238161697Z","level":"INFO","msg":"sender: started","stream_id":"n5j1tmrd"}
+{"time":"2024-11-18T16:50:26.238077417Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"n5j1tmrd"}}
+{"time":"2024-11-18T16:50:26.238204927Z","level":"INFO","msg":"handler: started","stream_id":{"value":"n5j1tmrd"}}
+{"time":"2024-11-18T16:50:26.483857414Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-18T16:50:26.694467424Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-18T16:50:26.694578984Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-18T16:50:26.694592994Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-18T16:50:26.694602254Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-18T16:50:29.015640261Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-18T16:50:50.185172236Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-18T16:50:52.214115823Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-18T16:50:52.220997956Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-18T16:50:52.223201147Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-18T16:50:52.616145845Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-18T16:50:52.617222995Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-18T16:50:54.879477254Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-18T17:08:45.480150556Z","level":"ERROR","msg":"runconsolelogs: failed to write to file: failed to open file: open /home/aac/Alireza/local_codes/wandb/run-20241118_165026-n5j1tmrd/files/output.log: no such file or directory"}
