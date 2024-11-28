@@ -1,0 +1,360 @@
+{0: 2, 1: 33, 2: 1298, 3: 5633, 4: 3733, 5: 5181, 6: 5444, 7: 15383, 8: 65228, 9: 59006, 10: 53852, 11: 141571, 12: 20369, 13: 13615, 14: 17388, 15: 32162, 16: 35564, 17: 34333, 18: 33100, 19: 43499, 20: 61507, 21: 57902, 22: 31211, 23: 32827, 24: 107510, 25: 82470, 26: 96454, 27: 90631, 28: 85202, 29: 70506, 30: 71899, 31: 26726, 32: 11716, 33: 6444, 34: 2510, 35: 872, 36: 4}
+
+Taxonomic ranks sorted by number of taxa:
+11: 141571
+24: 107510
+26: 96454
+27: 90631
+28: 85202
+25: 82470
+30: 71899
+29: 70506
+8: 65228
+20: 61507
+9: 59006
+21: 57902
+10: 53852
+19: 43499
+16: 35564
+17: 34333
+18: 33100
+23: 32827
+15: 32162
+22: 31211
+31: 26726
+12: 20369
+14: 17388
+7: 15383
+13: 13615
+32: 11716
+33: 6444
+3: 5633
+6: 5444
+5: 5181
+4: 3733
+34: 2510
+2: 1298
+35: 872
+1: 33
+36: 4
+0: 2
+Some weights of EsmModel were not initialized from the model checkpoint at facebook/esm1b_t33_650M_UR50S and are newly initialized: ['esm.pooler.dense.bias', 'esm.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Trainable parameters: 754.155969 M
+Total parameters: 1406.51247 M
+ESM1b(
+  (esm): EsmModel(
+    (embeddings): EsmEmbeddings(
+      (word_embeddings): Embedding(33, 1280, padding_idx=1)
+      (layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+      (dropout): Dropout(p=0.0, inplace=False)
+      (position_embeddings): Embedding(1026, 1280, padding_idx=1)
+    )
+    (encoder): EsmEncoder(
+      (layer): ModuleList(
+        (0-32): 33 x EsmLayer(
+          (attention): EsmAttention(
+            (self): EsmSelfAttention(
+              (query): Linear(in_features=1280, out_features=1280, bias=True)
+              (key): Linear(in_features=1280, out_features=1280, bias=True)
+              (value): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): EsmSelfOutput(
+              (dense): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          )
+          (intermediate): EsmIntermediate(
+            (dense): Linear(in_features=1280, out_features=5120, bias=True)
+          )
+          (output): EsmOutput(
+            (dense): Linear(in_features=5120, out_features=1280, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+          (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+      (emb_layer_norm_after): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+    )
+    (pooler): EsmPooler(
+      (dense): Linear(in_features=1280, out_features=1280, bias=True)
+      (activation): Tanh()
+    )
+    (contact_head): EsmContactPredictionHead(
+      (regression): Linear(in_features=660, out_features=1, bias=True)
+      (activation): Sigmoid()
+    )
+  )
+  (heads): ModuleDict(
+    (0): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=2, bias=True)
+    )
+    (1): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=33, bias=True)
+    )
+    (2): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=1298, bias=True)
+    )
+    (3): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=5633, bias=True)
+    )
+    (4): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=3733, bias=True)
+    )
+    (5): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=5181, bias=True)
+    )
+    (6): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=5444, bias=True)
+    )
+    (7): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=15383, bias=True)
+    )
+    (8): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=65228, bias=True)
+    )
+    (9): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=59006, bias=True)
+    )
+    (10): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=53852, bias=True)
+    )
+    (11): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=141571, bias=True)
+    )
+    (12): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=20369, bias=True)
+    )
+    (13): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=13615, bias=True)
+    )
+    (14): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=17388, bias=True)
+    )
+    (15): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=32162, bias=True)
+    )
+    (16): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=35564, bias=True)
+    )
+    (17): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=34333, bias=True)
+    )
+    (18): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=33100, bias=True)
+    )
+    (19): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=43499, bias=True)
+    )
+    (20): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=61507, bias=True)
+    )
+    (21): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=57902, bias=True)
+    )
+    (22): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=31211, bias=True)
+    )
+    (23): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=32827, bias=True)
+    )
+    (24): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=107510, bias=True)
+    )
+    (25): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=82470, bias=True)
+    )
+    (26): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=96454, bias=True)
+    )
+    (27): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=90631, bias=True)
+    )
+    (28): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=85202, bias=True)
+    )
+    (29): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=70506, bias=True)
+    )
+    (30): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=71899, bias=True)
+    )
+    (31): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=26726, bias=True)
+    )
+    (32): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=11716, bias=True)
+    )
+    (33): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=6444, bias=True)
+    )
+    (34): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=2510, bias=True)
+    )
+    (35): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=872, bias=True)
+    )
+    (36): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=4, bias=True)
+    )
+  )
+)
+  0%|          | 303/100000 [05:58<32:44:34,  1.18s/it]
+ 11%|█         | 10999/100000 [3:46:31<29:08:08,  1.18s/it] 
+Epoch [1000/100000]
+Train Loss: 2.4113
+Val Loss: 40.8854
+Epoch [2000/100000]
+Train Loss: 2.1791
+Val Loss: 38.6332
+Epoch [3000/100000]
+Train Loss: 2.1207
+Val Loss: 38.0773
+Epoch [4000/100000]
+Train Loss: 2.1204
+Val Loss: 42.5822
+Epoch [5000/100000]
+Train Loss: 2.0320
+Val Loss: 38.0299
+Epoch [6000/100000]
+Train Loss: 1.9959
+Val Loss: 35.3610
+Epoch [7000/100000]
+Train Loss: 2.0340
+Val Loss: 39.3766
+Epoch [8000/100000]
+Train Loss: 2.0052
+Val Loss: 40.2550
+Epoch [9000/100000]
+Train Loss: 1.9540
+Val Loss: 38.3771
+Epoch [10000/100000]
+Train Loss: 1.9298
+Val Loss: 38.1106
+Epoch [11000/100000]
+Train Loss: 1.9218
+Val Loss: 40.7609
+Epoch [12000/100000]
+Train Loss: 1.9804
+Val Loss: 41.6089
+Epoch [13000/100000]
+Train Loss: 1.9755
+Val Loss: 39.8949
+Epoch [14000/100000]
+Train Loss: 1.9511
+Val Loss: 37.4337
+Epoch [15000/100000]
+Train Loss: 2.0043
+Val Loss: 42.4216
+Epoch [16000/100000]
+Train Loss: 2.0179
+Val Loss: 36.9426
+Epoch [17000/100000]
+Train Loss: 1.9574
+Val Loss: 43.1344
+Epoch [18000/100000]
+Train Loss: 1.9591
+Val Loss: 45.5487
+Epoch [19000/100000]
+Train Loss: 1.9511
+Val Loss: 40.9695
+Epoch [20000/100000]
+Train Loss: 1.9425
+Val Loss: 38.3212
+Epoch [21000/100000]
+Train Loss: 1.9386
+Val Loss: 40.2910
+Epoch [22000/100000]
+Train Loss: 2.0274
+Val Loss: 42.1973
+Epoch [23000/100000]
+Train Loss: 2.0096
+Val Loss: 42.2883
+Epoch [24000/100000]
+Train Loss: 2.0072
+Val Loss: 42.4409
+Epoch [25000/100000]
+Train Loss: 1.9881
+Val Loss: 46.2398
+Epoch [26000/100000]
+Train Loss: 1.9943
+Val Loss: 42.4587
+Epoch [27000/100000]
+Train Loss: 1.9950
+Val Loss: 44.3577

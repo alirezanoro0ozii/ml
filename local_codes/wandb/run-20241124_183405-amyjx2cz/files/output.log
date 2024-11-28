@@ -1,0 +1,137 @@
+model: 473.081209 M parameters
+EnhancedProteinCNN(
+  (embedding): Embedding(25, 128, padding_idx=0)
+  (feature_dense): Linear(in_features=3, out_features=128, bias=True)
+  (global_feature_dense): Linear(in_features=28, out_features=128, bias=True)
+  (initial_conv): Sequential(
+    (0): Conv1d(128, 2000, kernel_size=(21,), stride=(1,), padding=same)
+    (1): ReLU()
+    (2): BatchNorm1d(2000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (residual_blocks): ModuleList(
+    (0-4): 5 x ResidualBlock(
+      (layers): Sequential(
+        (0): Conv1d(2000, 1000, kernel_size=(1,), stride=(1,))
+        (1): ReLU()
+        (2): BatchNorm1d(1000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): Conv1d(1000, 1000, kernel_size=(21,), stride=(1,), padding=same)
+        (4): ReLU()
+        (5): BatchNorm1d(1000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (6): Conv1d(1000, 2000, kernel_size=(1,), stride=(1,))
+      )
+    )
+  )
+  (pool): AdaptiveMaxPool1d(output_size=1)
+  (fc1): Linear(in_features=2000, out_features=512, bias=True)
+  (fc2): Linear(in_features=512, out_features=256, bias=True)
+  (fc3): Linear(in_features=256, out_features=1276825, bias=True)
+  (fc4): Linear(in_features=256, out_features=51952, bias=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (layer_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+)
+model: 473.081209 M parameters
+EnhancedProteinCNN(
+  (embedding): Embedding(25, 128, padding_idx=0)
+  (feature_dense): Linear(in_features=3, out_features=128, bias=True)
+  (global_feature_dense): Linear(in_features=28, out_features=128, bias=True)
+  (initial_conv): Sequential(
+    (0): Conv1d(128, 2000, kernel_size=(21,), stride=(1,), padding=same)
+    (1): ReLU()
+    (2): BatchNorm1d(2000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (residual_blocks): ModuleList(
+    (0-4): 5 x ResidualBlock(
+      (layers): Sequential(
+        (0): Conv1d(2000, 1000, kernel_size=(1,), stride=(1,))
+        (1): ReLU()
+        (2): BatchNorm1d(1000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): Conv1d(1000, 1000, kernel_size=(21,), stride=(1,), padding=same)
+        (4): ReLU()
+        (5): BatchNorm1d(1000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (6): Conv1d(1000, 2000, kernel_size=(1,), stride=(1,))
+      )
+    )
+  )
+  (pool): AdaptiveMaxPool1d(output_size=1)
+  (fc1): Linear(in_features=2000, out_features=512, bias=True)
+  (fc2): Linear(in_features=512, out_features=256, bias=True)
+  (fc3): Linear(in_features=256, out_features=1276825, bias=True)
+  (fc4): Linear(in_features=256, out_features=51952, bias=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (layer_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+)
+  0%|          | 0/100000 [00:00<?, ?it/s]
+first level # of Classes 1276825
+end level # of Classes 51952
+model: 473.081209 M parameters
+EnhancedProteinCNN(
+  (embedding): Embedding(25, 128, padding_idx=0)
+  (feature_dense): Linear(in_features=3, out_features=128, bias=True)
+  (global_feature_dense): Linear(in_features=28, out_features=128, bias=True)
+  (initial_conv): Sequential(
+    (0): Conv1d(128, 2000, kernel_size=(21,), stride=(1,), padding=same)
+    (1): ReLU()
+    (2): BatchNorm1d(2000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (residual_blocks): ModuleList(
+    (0-4): 5 x ResidualBlock(
+      (layers): Sequential(
+        (0): Conv1d(2000, 1000, kernel_size=(1,), stride=(1,))
+        (1): ReLU()
+        (2): BatchNorm1d(1000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): Conv1d(1000, 1000, kernel_size=(21,), stride=(1,), padding=same)
+        (4): ReLU()
+        (5): BatchNorm1d(1000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (6): Conv1d(1000, 2000, kernel_size=(1,), stride=(1,))
+      )
+    )
+  )
+  (pool): AdaptiveMaxPool1d(output_size=1)
+  (fc1): Linear(in_features=2000, out_features=512, bias=True)
+  (fc2): Linear(in_features=512, out_features=256, bias=True)
+  (fc3): Linear(in_features=256, out_features=1276825, bias=True)
+  (fc4): Linear(in_features=256, out_features=51952, bias=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (layer_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+)
+  0%|          | 0/100000 [00:37<?, ?it/s]
+model: 473.146745 M parameters
+EnhancedProteinCNN(
+  (embedding): Embedding(25, 128, padding_idx=0)
+  (feature_dense): Linear(in_features=3, out_features=128, bias=True)
+  (global_feature_dense): Linear(in_features=28, out_features=128, bias=True)
+  (initial_conv): Sequential(
+    (0): Conv1d(128, 2000, kernel_size=(21,), stride=(1,), padding=same)
+    (1): ReLU()
+    (2): BatchNorm1d(2000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (residual_blocks): ModuleList(
+    (0-4): 5 x ResidualBlock(
+      (layers): Sequential(
+        (0): Conv1d(2000, 1000, kernel_size=(1,), stride=(1,))
+        (1): ReLU()
+        (2): BatchNorm1d(1000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): Conv1d(1000, 1000, kernel_size=(21,), stride=(1,), padding=same)
+        (4): ReLU()
+        (5): BatchNorm1d(1000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (6): Conv1d(1000, 2000, kernel_size=(1,), stride=(1,))
+      )
+    )
+  )
+  (pool): AdaptiveMaxPool1d(output_size=1)
+  (fc1): Linear(in_features=2128, out_features=512, bias=True)
+  (fc2): Linear(in_features=512, out_features=256, bias=True)
+  (fc3): Linear(in_features=256, out_features=1276825, bias=True)
+  (fc4): Linear(in_features=256, out_features=51952, bias=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (layer_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+)
+  0%|          | 0/100000 [03:47<?, ?it/s]
+  0%|          | 0/100000 [00:02<?, ?it/s]
+data loaded
+output calculated
+backward completed
+  0%|          | 10/100000 [00:21<59:37:28,  2.15s/it]
+  0%|          | 20/100000 [00:38<53:51:20,  1.94s/it]
+cuda:0
+../checkpoints/CNN last level_checkpoints

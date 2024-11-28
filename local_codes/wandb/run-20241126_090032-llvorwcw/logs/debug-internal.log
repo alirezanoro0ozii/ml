@@ -1,0 +1,25 @@
+{"time":"2024-11-26T09:00:33.995606041Z","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-26T09:00:33.995654871Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241126_090032-llvorwcw/logs/debug-core.log"}
+{"time":"2024-11-26T09:00:34.11872704Z","level":"INFO","msg":"created new stream","id":"llvorwcw"}
+{"time":"2024-11-26T09:00:34.11878217Z","level":"INFO","msg":"stream: started","id":"llvorwcw"}
+{"time":"2024-11-26T09:00:34.11886162Z","level":"INFO","msg":"sender: started","stream_id":"llvorwcw"}
+{"time":"2024-11-26T09:00:34.11890048Z","level":"INFO","msg":"handler: started","stream_id":"llvorwcw"}
+{"time":"2024-11-26T09:00:34.11887068Z","level":"INFO","msg":"writer: Do: started","stream_id":"llvorwcw"}
+{"time":"2024-11-26T09:00:34.310983051Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-26T09:00:34.530273356Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T09:00:34.530354176Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T09:00:35.203221517Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T09:00:47.412843439Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T09:00:47.453891138Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T09:00:48.731881998Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T09:00:55.577954562Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T09:06:29.519312328Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T09:06:29.562026908Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T09:24:45.981405451Z","level":"INFO","msg":"stream: closing","id":"llvorwcw"}
+{"time":"2024-11-26T09:24:45.981533232Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-26T09:24:45.983754553Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-26T09:24:46.422000212Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-26T09:24:46.522500099Z","level":"INFO","msg":"handler: closed","stream_id":"llvorwcw"}
+{"time":"2024-11-26T09:24:46.522536089Z","level":"INFO","msg":"writer: Close: closed","stream_id":"llvorwcw"}
+{"time":"2024-11-26T09:24:46.52258565Z","level":"INFO","msg":"sender: closed","stream_id":"llvorwcw"}
+{"time":"2024-11-26T09:24:46.525422761Z","level":"INFO","msg":"stream: closed","id":"llvorwcw"}

@@ -1,0 +1,263 @@
+Some weights of EsmModel were not initialized from the model checkpoint at facebook/esm1b_t33_650M_UR50S and are newly initialized: ['esm.pooler.dense.bias', 'esm.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Trainable parameters: 0.657924 M
+Total parameters: 653.014425 M
+ESM1b(
+  (esm): EsmModel(
+    (embeddings): EsmEmbeddings(
+      (word_embeddings): Embedding(33, 1280, padding_idx=1)
+      (layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+      (dropout): Dropout(p=0.0, inplace=False)
+      (position_embeddings): Embedding(1026, 1280, padding_idx=1)
+    )
+    (encoder): EsmEncoder(
+      (layer): ModuleList(
+        (0-32): 33 x EsmLayer(
+          (attention): EsmAttention(
+            (self): EsmSelfAttention(
+              (query): Linear(in_features=1280, out_features=1280, bias=True)
+              (key): Linear(in_features=1280, out_features=1280, bias=True)
+              (value): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): EsmSelfOutput(
+              (dense): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          )
+          (intermediate): EsmIntermediate(
+            (dense): Linear(in_features=1280, out_features=5120, bias=True)
+          )
+          (output): EsmOutput(
+            (dense): Linear(in_features=5120, out_features=1280, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+          (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+      (emb_layer_norm_after): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+    )
+    (pooler): EsmPooler(
+      (dense): Linear(in_features=1280, out_features=1280, bias=True)
+      (activation): Tanh()
+    )
+    (contact_head): EsmContactPredictionHead(
+      (regression): Linear(in_features=660, out_features=1, bias=True)
+      (activation): Sigmoid()
+    )
+  )
+  (layer1): Linear(in_features=1280, out_features=512, bias=True)
+  (relu): ReLU()
+  (layer2): Linear(in_features=512, out_features=4, bias=True)
+)
+Successfully loaded checkpoint from epoch 99999
+Metrics at checkpoint: {'train_loss': 0.08703388193866704, 'train_accuracy': 0.972, 'train_f1_micro': 0.972, 'train_f1_macro': 0.6321182114729275, 'train_confusion_matrix': array([[    0,     0,     0,     0],
+       [    0,  1811,   184,     0],
+       [    0,   157, 13741,     1],
+       [    0,     8,    98,     0]]), 'val_loss': 0.06967763296049088, 'val_accuracy': 0.9805, 'val_f1_micro': 0.9805, 'val_f1_macro': 0.5561100310384487, 'val_confusion_matrix': array([[    0,     0,     0,     0],
+       [    0,   220,    18,     0],
+       [    0,   180, 15468,     0],
+       [    0,    11,   103,     0]]), 'epoch': 100000, 'current_portion': 0.0625, 'lr': 0.0008965153869722053}
+100%|██████████| 50/50 [00:25<00:00,  1.98it/s]
+(0.14959309390746056, 0.9475, 0.9475, 0.6336754797190577, array([[  0,   0,   0,   0],
+       [  0, 363,  37,   0],
+       [  0,   0, 395,   0],
+       [  0,   0,   5,   0]]))
+100%|██████████| 50/50 [00:25<00:00,  1.98it/s]
+[[  0   0   0   0]
+ [  0 363  37   0]
+ [  0   0 395   0]
+ [  0   0   5   0]]
+50
+50
+[Sequence                   PQITLWQRPLVTIRVGGLQKEALLDTGADDTVLEEIDLPGRWKPKM...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Pararnavirae, Artvervirico...
+Taxonomic_lineage_IDs                                                  11676
+Length                                                                   296
+Name: 1200, dtype: object, Sequence                   CKELEKDGKISKIGPENPYNTPIFAIKKKNSTKWRKLVDFRELNKR...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Pararnavirae, Artvervirico...
+Taxonomic_lineage_IDs                                                  11676
+Length                                                                   207
+Name: 1201, dtype: object, Sequence                   MGARASVLSGGKLDAWEKIRLRPGGKKKYRMKHLVWASRELDRFAL...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Pararnavirae, Artvervirico...
+Taxonomic_lineage_IDs                                                  11676
+Length                                                                   495
+Name: 1202, dtype: object, Sequence                   PQITLWQRPLVTVXXGGQXKEALLDTGADDTVLEDINLPGKWKPKM...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Pararnavirae, Artvervirico...
+Taxonomic_lineage_IDs                                                  11676
+Length                                                                   398
+Name: 1203, dtype: object, Sequence                   PQITLWQRPXVXIKIGGQLKEALLDTGADDTVLEEMNLPGKWKPKM...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Pararnavirae, Artvervirico...
+Taxonomic_lineage_IDs                                                  11676
+Length                                                                   384
+Name: 1204, dtype: object, Sequence                   MNLRFLRLFCKGLILLTVTLLSVFFICWKICCALVIKMSDALNGNL...
+Taxonomic_lineage__ALL_    Viruses, Monodnaviria (single-stranded DNA vir...
+Taxonomic_lineage_IDs                                                2202644
+Length                                                                   226
+Name: 1205, dtype: object, Sequence                   MPTTAEKLINSVCATKQIAPLMADNVDDLFGPFRDVWISMRQYYMQ...
+Taxonomic_lineage__ALL_    Viruses, Duplodnaviria, Heunggongvirae, Urovir...
+Taxonomic_lineage_IDs                                                2283303
+Length                                                                   406
+Name: 1206, dtype: object, Sequence                   MFAMLNDLVILIRNIVILIAILRFFGYAEITENVDVELSDTAIADR...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Orthornavirae, Duplornavir...
+Taxonomic_lineage_IDs                                                 994994
+Length                                                                   295
+Name: 1207, dtype: object, Sequence                   LSHEQPISFVTLPSFNDHSFVNITVSASFGGHSGANLIASDTTING...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Orthornavirae, Pisuviricot...
+Taxonomic_lineage_IDs                                                  28295
+Length                                                                   216
+Name: 1208, dtype: object, Sequence                   MASQGTKRSYEQMETGGERQNATEIRASVGRMVGGIGRFYIQMCTE...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Orthornavirae, Negarnaviri...
+Taxonomic_lineage_IDs                                                 196455
+Length                                                                   498
+Name: 1209, dtype: object, Sequence                   PQITLWQRPLVTIKIGGQMKEALLDTGADDTVLEDINLPGKWKPKM...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Pararnavirae, Artvervirico...
+Taxonomic_lineage_IDs                                                  11676
+Length                                                                   398
+Name: 1210, dtype: object, Sequence                   MTGGLTQLVAYGAQDVYLTGDPEQTFWKEKFSRYTNFALESIEQDI...
+Taxonomic_lineage__ALL_    Viruses, Varidnaviria, Bamfordvirae, Nucleocyt...
+Taxonomic_lineage_IDs                                                1278275
+Length                                                                   410
+Name: 1211, dtype: object, Sequence                   MFLGLFQYTIDTVVKDVSKSANLSLDAVQELELNVVPIRQASNVTG...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Orthornavirae, Pisuviricot...
+Taxonomic_lineage_IDs                                                  28295
+Length                                                                   224
+Name: 1212, dtype: object, Sequence                   MENITSGLLGPLLVLQAGFFLLTRILTIPKSLDSWWTSLNFLGGTT...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Pararnavirae, Artvervirico...
+Taxonomic_lineage_IDs                                                  10407
+Length                                                                   226
+Name: 1213, dtype: object, Sequence                   PQITLWQRPLVPIRIGGXLKEALLDTGADDTVLEDINLPGRWKPKM...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Pararnavirae, Artvervirico...
+Taxonomic_lineage_IDs                                                  11676
+Length                                                                   499
+Name: 1214, dtype: object, Sequence                   MYGIEYTTFLIYLISVILFNYILKSITRMMDYIIYKFLLIVTIASI...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Orthornavirae, Duplornavir...
+Taxonomic_lineage_IDs                                                1835655
+Length                                                                   326
+Name: 1215, dtype: object]
+50
+50
+[Sequence                   MTMKMMVHIYFVSLLLLLFHSYAIDIENEITEFFNKMRDTLPAKDS...
+Taxonomic_lineage__ALL_    Viruses, Varidnaviria, Bamfordvirae, Nucleocyt...
+Taxonomic_lineage_IDs                                                  10254
+Length                                                                   351
+Name: 2000, dtype: object, Sequence                   MTYPRRRYRRRRHRPRSHLGQILRRRPWLVHPRHRYRWRRKNGIFN...
+Taxonomic_lineage__ALL_    Viruses, Monodnaviria (single-stranded DNA vir...
+Taxonomic_lineage_IDs                                                  85708
+Length                                                                   233
+Name: 2001, dtype: object, Sequence                   MSYKIGLIGLAGAGKDTVAVILQEALKEIGQEFEIDRYAGLLKETA...
+Taxonomic_lineage__ALL_    Viruses, Duplodnaviria, Heunggongvirae, Urovir...
+Taxonomic_lineage_IDs                                                2675228
+Length                                                                   217
+Name: 2002, dtype: object, Sequence                   KSFLDDRKVEYDENEIKIVLKEKMDFILEDSGVKANILGKAATIDQ...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Orthornavirae, Duplornavir...
+Taxonomic_lineage_IDs                                                  28875
+Length                                                                   253
+Name: 2003, dtype: object, Sequence                   MASQGTKRSYEQMETGGERQNATEIRASVGRMVGGIGRFYIQMCTE...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Orthornavirae, Negarnaviri...
+Taxonomic_lineage_IDs                                                1283402
+Length                                                                   498
+Name: 2004, dtype: object, Sequence                   MDSNTVSSFQVDCFLWHVRKRFADQELGDAPFLDRLRRDQKSLRGR...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Orthornavirae, Negarnaviri...
+Taxonomic_lineage_IDs                                                1445083
+Length                                                                   230
+Name: 2005, dtype: object, Sequence                   MTLKTRPPTGAVPWPLILVEGGEKAGKSWAAAVLSSSEKVGRTLWI...
+Taxonomic_lineage__ALL_    Viruses, Duplodnaviria, Heunggongvirae, Urovir...
+Taxonomic_lineage_IDs                                                2653764
+Length                                                                   325
+Name: 2006, dtype: object, Sequence                   MENTTSGFLGPLLVLQAGFFLLTRILTIPQSLDSWWTSLNFXGGAP...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Pararnavirae, Artvervirico...
+Taxonomic_lineage_IDs                                                  10407
+Length                                                                   226
+Name: 2007, dtype: object, Sequence                   MQTCSARRRPRAAAALVVACAGALMALCAVMVSCAGDVFVEVSTNE...
+Taxonomic_lineage__ALL_    Viruses, Varidnaviria, Bamfordvirae, Nucleocyt...
+Taxonomic_lineage_IDs                                                  10279
+Length                                                                   298
+Name: 2008, dtype: object, Sequence                   LILQMGNIISIWISHSIQLGNQNQIETCNQSVITYENNTWVNQTYV...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Orthornavirae, Negarnaviri...
+Taxonomic_lineage_IDs                                                1885548
+Length                                                                   417
+Name: 2009, dtype: object, Sequence                   MAAVTFATAITNTTASRSASTGMVQFGNFPPVPLRSTTVTTGATSV...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Orthornavirae, Pisuviricot...
+Taxonomic_lineage_IDs                                                  12230
+Length                                                                   362
+Name: 2010, dtype: object, Sequence                   MEVRKFDSEKLVLTQCLNTSLIAAYLQLKTFHITQQSKQGMLPSFS...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Orthornavirae, Pisuviricot...
+Taxonomic_lineage_IDs                                                1526652
+Length                                                                   213
+Name: 2011, dtype: object, Sequence                   MTLGLAQYSVTHLSEIKTQALPGKRSAVRVASQASWGAASPENQTD...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Orthornavirae, Kitrinoviri...
+Taxonomic_lineage_IDs                                                2304522
+Length                                                                   268
+Name: 2012, dtype: object, Sequence                   MTIQMRSLEFGHCAAIYGIVGMTADETYQHLSKMKATVYLIPQGSH...
+Taxonomic_lineage__ALL_    Viruses, Duplodnaviria, Heunggongvirae, Urovir...
+Taxonomic_lineage_IDs                                                2836127
+Length                                                                   244
+Name: 2013, dtype: object, Sequence                   ILTILIFIILLNYILKTITNTMDYIIFRFLLLIALMSPFVRTQNYG...
+Taxonomic_lineage__ALL_    Viruses, Riboviria, Orthornavirae, Duplornavir...
+Taxonomic_lineage_IDs                                                  28875
+Length                                                                   244
+Name: 2014, dtype: object, Sequence                   MSRTTQPPVAVPASYPCSTFFVDESAAKASGGSYFVVGAIKTRQPG...
+Taxonomic_lineage__ALL_    Viruses, Duplodnaviria, Heunggongvirae, Urovir...
+Taxonomic_lineage_IDs                                                2652883
+Length                                                                   257
+Name: 2015, dtype: object]
+800
+Successfully loaded checkpoint from epoch 99999
+Metrics at checkpoint: {'train_loss': 0.08703388193866704, 'train_accuracy': 0.972, 'train_f1_micro': 0.972, 'train_f1_macro': 0.6321182114729275, 'train_confusion_matrix': array([[    0,     0,     0,     0],
+       [    0,  1811,   184,     0],
+       [    0,   157, 13741,     1],
+       [    0,     8,    98,     0]]), 'val_loss': 0.06967763296049088, 'val_accuracy': 0.9805, 'val_f1_micro': 0.9805, 'val_f1_macro': 0.5561100310384487, 'val_confusion_matrix': array([[    0,     0,     0,     0],
+       [    0,   220,    18,     0],
+       [    0,   180, 15468,     0],
+       [    0,    11,   103,     0]]), 'epoch': 100000, 'current_portion': 0.0625, 'lr': 0.0008965153869722053}
+800it [00:35, 22.32it/s]
+0.01375
+0.010098994704934387
+0.01375
+[[  0 376  24]
+ [  0  10 389]
+ [  0   0   1]]
+Average Loss: 25.5438
+Accuracy: 0.0138, 0.0138
+
+Sample of results:
+                                            sequence  label  pred       loss
+0  METLCQRLNVCQDKILTHYEKDSTDLRDHIDYWKHMRLECAIYYKA...      0     1  21.227369
+1  MNAAENLFTGFEDLGDDFATVEINNEAPKTLEDVSMGARPNSRKEV...      0     1  33.057095
+2  MASNQHSQRERTPDRNTQPPPPKMGRYFLESESEEDLEAVPLPPKK...      0     1  37.021015
+3  MDSNTVSSFQVDCFLWHVRKRFADQELGDAPFLDRLRRDQKSLKGR...      0     1  24.877094
+4  MDADRIVFKVNNQVVSLKPEIIVDQYEYKYPAIKDLKKPSITLGKA...      0     1  32.408875
+[[  0 376  24]
+ [  0  10 389]
+ [  0   0   1]]
+800
+Successfully loaded checkpoint from epoch 99999
+Metrics at checkpoint: {'train_loss': 0.08703388193866704, 'train_accuracy': 0.972, 'train_f1_micro': 0.972, 'train_f1_macro': 0.6321182114729275, 'train_confusion_matrix': array([[    0,     0,     0,     0],
+       [    0,  1811,   184,     0],
+       [    0,   157, 13741,     1],
+       [    0,     8,    98,     0]]), 'val_loss': 0.06967763296049088, 'val_accuracy': 0.9805, 'val_f1_micro': 0.9805, 'val_f1_macro': 0.5561100310384487, 'val_confusion_matrix': array([[    0,     0,     0,     0],
+       [    0,   220,    18,     0],
+       [    0,   180, 15468,     0],
+       [    0,    11,   103,     0]]), 'epoch': 100000, 'current_portion': 0.0625, 'lr': 0.0008965153869722053}
+800it [00:36, 21.91it/s]
+0.00625
+0.005010250997804225
+0.00625
+[[  0 371  29]
+ [  0   4 395]
+ [  0   0   1]]
+Average Loss: 25.6760
+Accuracy: 0.0063, 0.0063
+
+Sample of results:
+                                            sequence  label  pred       loss
+0  MAPPVIEEYLGSRPSMERCVLLRAQRRNMSRVLNFDRKLFLSLVVK...      0     1  48.643250
+1  PQITLWQRPLVTVRIGGQLKEALLDTGADDTVLEDINLPGKWKPKM...      0     1  67.208107
+2  MTEARGDTNEEKYQKLFNSYNDAIAKYNAIANTGTKTAIKAAQRID...      0     1  31.997091
+3  MSDGAVQPDGGQPAVRNERATGSGNGSGGGGGGGSGGVGISTGTFN...      0     1  27.842787
+4  MSDLVITNSLIKSFKGCEQATKYKHVDLLGPKLNRAKPLTRGSWFH...      0     1  40.559608
+[[  0 371  29]
+ [  0   4 395]
+ [  0   0   1]]

@@ -1,0 +1,359 @@
+{0: 4, 1: 35, 2: 1368, 3: 6024, 4: 4330, 5: 5265, 6: 5453, 7: 15592, 8: 65895, 9: 59786, 10: 54221, 11: 141660, 12: 20431, 13: 13635, 14: 17392, 15: 32172, 16: 35581, 17: 34356, 18: 33115, 19: 43504, 20: 61510, 21: 57903, 22: 31214, 23: 32835, 24: 107520, 25: 82492, 26: 96471, 27: 90666, 28: 85207, 29: 70508, 30: 71902, 31: 26728, 32: 11716, 33: 6444, 34: 2510, 35: 872, 36: 4}
+
+Taxonomic ranks sorted by number of taxa:
+11: 141660
+24: 107520
+26: 96471
+27: 90666
+28: 85207
+25: 82492
+30: 71902
+29: 70508
+8: 65895
+20: 61510
+9: 59786
+21: 57903
+10: 54221
+19: 43504
+16: 35581
+17: 34356
+18: 33115
+23: 32835
+15: 32172
+22: 31214
+31: 26728
+12: 20431
+14: 17392
+7: 15592
+13: 13635
+32: 11716
+33: 6444
+3: 6024
+6: 5453
+5: 5265
+4: 4330
+34: 2510
+2: 1368
+35: 872
+1: 35
+0: 4
+36: 4
+Some weights of EsmModel were not initialized from the model checkpoint at facebook/esm2_t33_650M_UR50D and are newly initialized: ['esm.pooler.dense.bias', 'esm.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Trainable parameters: 755.969937 M
+Total parameters: 1408.323878 M
+ESM2(
+  (esm): EsmModel(
+    (embeddings): EsmEmbeddings(
+      (word_embeddings): Embedding(33, 1280, padding_idx=1)
+      (dropout): Dropout(p=0.0, inplace=False)
+      (position_embeddings): Embedding(1026, 1280, padding_idx=1)
+    )
+    (encoder): EsmEncoder(
+      (layer): ModuleList(
+        (0-32): 33 x EsmLayer(
+          (attention): EsmAttention(
+            (self): EsmSelfAttention(
+              (query): Linear(in_features=1280, out_features=1280, bias=True)
+              (key): Linear(in_features=1280, out_features=1280, bias=True)
+              (value): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (rotary_embeddings): RotaryEmbedding()
+            )
+            (output): EsmSelfOutput(
+              (dense): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          )
+          (intermediate): EsmIntermediate(
+            (dense): Linear(in_features=1280, out_features=5120, bias=True)
+          )
+          (output): EsmOutput(
+            (dense): Linear(in_features=5120, out_features=1280, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+          (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+      (emb_layer_norm_after): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+    )
+    (pooler): EsmPooler(
+      (dense): Linear(in_features=1280, out_features=1280, bias=True)
+      (activation): Tanh()
+    )
+    (contact_head): EsmContactPredictionHead(
+      (regression): Linear(in_features=660, out_features=1, bias=True)
+      (activation): Sigmoid()
+    )
+  )
+  (heads): ModuleDict(
+    (0): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=4, bias=True)
+    )
+    (1): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=35, bias=True)
+    )
+    (2): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=1368, bias=True)
+    )
+    (3): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=6024, bias=True)
+    )
+    (4): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=4330, bias=True)
+    )
+    (5): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=5265, bias=True)
+    )
+    (6): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=5453, bias=True)
+    )
+    (7): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=15592, bias=True)
+    )
+    (8): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=65895, bias=True)
+    )
+    (9): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=59786, bias=True)
+    )
+    (10): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=54221, bias=True)
+    )
+    (11): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=141660, bias=True)
+    )
+    (12): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=20431, bias=True)
+    )
+    (13): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=13635, bias=True)
+    )
+    (14): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=17392, bias=True)
+    )
+    (15): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=32172, bias=True)
+    )
+    (16): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=35581, bias=True)
+    )
+    (17): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=34356, bias=True)
+    )
+    (18): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=33115, bias=True)
+    )
+    (19): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=43504, bias=True)
+    )
+    (20): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=61510, bias=True)
+    )
+    (21): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=57903, bias=True)
+    )
+    (22): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=31214, bias=True)
+    )
+    (23): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=32835, bias=True)
+    )
+    (24): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=107520, bias=True)
+    )
+    (25): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=82492, bias=True)
+    )
+    (26): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=96471, bias=True)
+    )
+    (27): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=90666, bias=True)
+    )
+    (28): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=85207, bias=True)
+    )
+    (29): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=70508, bias=True)
+    )
+    (30): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=71902, bias=True)
+    )
+    (31): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=26728, bias=True)
+    )
+    (32): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=11716, bias=True)
+    )
+    (33): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=6444, bias=True)
+    )
+    (34): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=2510, bias=True)
+    )
+    (35): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=872, bias=True)
+    )
+    (36): Sequential(
+      (0): Linear(in_features=1280, out_features=512, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=512, out_features=4, bias=True)
+    )
+  )
+)
+Some weights of EsmModel were not initialized from the model checkpoint at facebook/esm2_t33_650M_UR50D and are newly initialized: ['esm.pooler.dense.bias', 'esm.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of EsmModel were not initialized from the model checkpoint at facebook/esm2_t33_650M_UR50D and are newly initialized: ['esm.pooler.dense.bias', 'esm.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Successfully loaded checkpoint from epoch 169
+Metrics at checkpoint: {'train_loss': 57.546465682983396, 'val_loss': 57.86085891723633, 'epoch': 170, 'lr': 0.0006751250967924678, 'val_loss_0': 0.05963578214868903, 'train_loss_0': 21.94827337670722, 'val_loss_1': 0.4336362838745117, 'train_loss_1': 112.11615225672722, 'val_loss_2': 1.6664147615432738, 'train_loss_2': 334.2173796892166, 'val_loss_3': 2.887707567214966, 'train_loss_3': 520.0066239833832, 'val_loss_4': 3.8203011035919188, 'train_loss_4': 668.7784805297852, 'val_loss_5': 4.719072151184082, 'train_loss_5': 829.7523424625397, 'val_loss_6': 5.411116409301758, 'train_loss_6': 947.5953078269958, 'val_loss_7': 6.134709358215332, 'train_loss_7': 1103.7139930725098, 'val_loss_8': 6.264642143249512, 'train_loss_8': 1168.3842663764954, 'val_loss_9': 4.0787474632263185, 'train_loss_9': 749.2036828994751, 'val_loss_10': 1.71512291431427, 'train_loss_10': 343.90104281902313, 'val_loss_11': 1.1885827779769897, 'train_loss_11': 277.36928260326385, 'val_loss_12': 1.2205617904663086, 'train_loss_12': 242.42004427313805, 'val_loss_13': 1.1645884394645691, 'train_loss_13': 231.66602471470833, 'val_loss_14': 1.1148670792579651, 'train_loss_14': 240.1518787741661, 'val_loss_15': 1.122046136856079, 'train_loss_15': 233.8647853732109, 'val_loss_16': 0.9751107096672058, 'train_loss_16': 216.6402544528246, 'val_loss_17': 0.9841154217720032, 'train_loss_17': 200.5311550796032, 'val_loss_18': 0.8508164167404175, 'train_loss_18': 196.6062268614769, 'val_loss_19': 0.9105007529258728, 'train_loss_19': 201.26693211495876, 'val_loss_20': 0.954163110256195, 'train_loss_20': 206.08716450631618, 'val_loss_21': 0.8328985139727593, 'train_loss_21': 185.63150577468332, 'val_loss_22': 0.8746771603822708, 'train_loss_22': 169.6247691533208, 'val_loss_23': 0.8105110540986061, 'train_loss_23': 159.11584761207632, 'val_loss_24': 0.7447468787431717, 'train_loss_24': 166.86048436333658, 'val_loss_25': 0.8819657325744629, 'train_loss_25': 159.65262589485792, 'val_loss_26': 1.0816874161362648, 'train_loss_26': 156.44706602257793, 'val_loss_27': 1.128452229499817, 'train_loss_27': 159.097616208713, 'val_loss_28': 1.1602489702403544, 'train_loss_28': 157.3823539428157, 'val_loss_29': 0.9736182071268559, 'train_loss_29': 135.4113263307578, 'val_loss_30': 0.8966209195554257, 'train_loss_30': 126.80184128902556, 'val_loss_31': 0.5151864908635616, 'train_loss_31': 68.75385398330998, 'val_loss_32': 0.1931583821773529, 'train_loss_32': 47.19421115278624, 'val_loss_33': 0.09062504484318197, 'train_loss_33': 28.809725146457104, 'val_loss_34': 2.9012516733928352e-06, 'train_loss_34': 10.492517782057453, 'val_loss_35': 0.0, 'train_loss_35': 0.841889999573965, 'val_loss_36': 7.450580596923829e-10, 'train_loss_36': 0.00041034038893439373}
+0 tensor(2, device='cuda:0')
+1 tensor(21, device='cuda:0')
+2 tensor(1009, device='cuda:0')
+3 tensor(283, device='cuda:0')
+4 tensor(146, device='cuda:0')
+5 tensor(1152, device='cuda:0')
+6 tensor(205, device='cuda:0')
+7 tensor(10179, device='cuda:0')
+8 tensor(0, device='cuda:0')
+9 tensor(0, device='cuda:0')
+10 tensor(0, device='cuda:0')
+11 tensor(0, device='cuda:0')
+12 tensor(0, device='cuda:0')
+13 tensor(0, device='cuda:0')
+14 tensor(0, device='cuda:0')
+15 tensor(0, device='cuda:0')
+16 tensor(0, device='cuda:0')
+17 tensor(0, device='cuda:0')
+18 tensor(0, device='cuda:0')
+19 tensor(0, device='cuda:0')
+20 tensor(0, device='cuda:0')
+21 tensor(0, device='cuda:0')
+22 tensor(0, device='cuda:0')
+23 tensor(0, device='cuda:0')
+24 tensor(0, device='cuda:0')
+25 tensor(0, device='cuda:0')
+26 tensor(0, device='cuda:0')
+27 tensor(0, device='cuda:0')
+28 tensor(0, device='cuda:0')
+29 tensor(0, device='cuda:0')
+30 tensor(0, device='cuda:0')
+31 tensor(0, device='cuda:0')
+32 tensor(0, device='cuda:0')
+33 tensor(0, device='cuda:0')
+34 tensor(0, device='cuda:0')
+35 tensor(0, device='cuda:0')
+36 tensor(0, device='cuda:0')
+0 2 cellular organisms
+1 21 Eukaryota
+2 1009 Opisthokonta
+3 283 Metazoa
+4 146 Eumetazoa
+5 1152 Bilateria
+6 205 Deuterostomia
+7 10179 Chordata
+0 2 cellular organisms
+1 21 Eukaryota
+2 78 Proteobacteria
+3 283 Metazoa
+4 146 Eumetazoa
+5 1152 Bilateria
+6 205 Deuterostomia
+7 10179 Chordata
+0 2 cellular organisms
+1 21 Eukaryota
+2 1009 Opisthokonta
+3 283 Metazoa
+4 146 Eumetazoa
+5 1152 Bilateria
+6 205 Deuterostomia
+7 10179 Chordata
+8 6816 Craniata
+0 2 cellular organisms
+1 21 Eukaryota
+2 1009 Opisthokonta
+3 283 Metazoa
+4 146 Eumetazoa
+5 1152 Bilateria
+6 205 Deuterostomia
+0 2 cellular organisms
+1 21 Eukaryota
+2 1009 Opisthokonta
+3 283 Metazoa
+4 146 Eumetazoa
+5 1152 Bilateria
+6 205 Deuterostomia

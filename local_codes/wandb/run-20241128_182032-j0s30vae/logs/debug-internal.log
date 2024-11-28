@@ -1,0 +1,22 @@
+{"time":"2024-11-28T18:20:33.00349556Z","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-28T18:20:33.00353418Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241128_182032-j0s30vae/logs/debug-core.log"}
+{"time":"2024-11-28T18:20:33.125639309Z","level":"INFO","msg":"created new stream","id":"j0s30vae"}
+{"time":"2024-11-28T18:20:33.125742049Z","level":"INFO","msg":"stream: started","id":"j0s30vae"}
+{"time":"2024-11-28T18:20:33.125847349Z","level":"INFO","msg":"writer: Do: started","stream_id":"j0s30vae"}
+{"time":"2024-11-28T18:20:33.125884529Z","level":"INFO","msg":"handler: started","stream_id":"j0s30vae"}
+{"time":"2024-11-28T18:20:33.126010439Z","level":"INFO","msg":"sender: started","stream_id":"j0s30vae"}
+{"time":"2024-11-28T18:20:33.308636346Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-28T18:20:33.522136448Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-28T18:20:33.522180548Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-28T18:20:34.142455474Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-28T18:20:34.185891574Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-28T18:20:34.185930694Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-28T18:20:34.185940334Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-28T18:20:42.283502816Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-28T18:20:42.29242969Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-28T18:20:44.633434866Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-28T18:20:44.674077635Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-28T18:20:44.674122615Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-28T18:20:44.674132545Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-28T18:20:44.674139945Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-28T18:20:44.674147095Z","level":"INFO","msg":"Resuming system monitor"}

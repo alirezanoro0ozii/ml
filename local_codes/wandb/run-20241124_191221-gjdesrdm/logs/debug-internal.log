@@ -1,0 +1,43 @@
+{"time":"2024-11-24T19:12:21.3884909Z","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-24T19:12:21.38853703Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241124_191221-gjdesrdm/logs/debug-core.log"}
+{"time":"2024-11-24T19:12:21.510541618Z","level":"INFO","msg":"created new stream","id":"gjdesrdm"}
+{"time":"2024-11-24T19:12:21.510603628Z","level":"INFO","msg":"stream: started","id":"gjdesrdm"}
+{"time":"2024-11-24T19:12:21.510724908Z","level":"INFO","msg":"sender: started","stream_id":"gjdesrdm"}
+{"time":"2024-11-24T19:12:21.510705048Z","level":"INFO","msg":"writer: Do: started","stream_id":"gjdesrdm"}
+{"time":"2024-11-24T19:12:21.510827358Z","level":"INFO","msg":"handler: started","stream_id":"gjdesrdm"}
+{"time":"2024-11-24T19:12:21.747074511Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-24T19:12:21.974090819Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:12:21.974207109Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:12:45.722700563Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:12:49.408477601Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:13:44.302045476Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:13:47.858558062Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:13:47.862871164Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:13:48.69369181Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:13:51.736548651Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:14:24.038694104Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:14:24.477622413Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:14:25.427920977Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:14:41.54098921Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:14:41.547655483Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:14:41.548964164Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:14:46.094799141Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:14:46.137835362Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:14:46.894583143Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:14:48.079707488Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:15:39.354452357Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:15:54.497562838Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:15:54.504371601Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:15:54.505554852Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:15:54.514599466Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:21:13.60371772Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:21:32.265478588Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:21:32.295163663Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-24T19:21:32.296332913Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-24T19:21:32.888081495Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-24T19:21:32.996685097Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-11-24T19:21:34.019411325Z","level":"INFO","msg":"stream: closing","id":"gjdesrdm"}
+{"time":"2024-11-24T19:21:34.019450475Z","level":"INFO","msg":"handler: closed","stream_id":"gjdesrdm"}
+{"time":"2024-11-24T19:21:34.019466615Z","level":"INFO","msg":"writer: Close: closed","stream_id":"gjdesrdm"}
+{"time":"2024-11-24T19:21:34.019534845Z","level":"INFO","msg":"sender: closed","stream_id":"gjdesrdm"}
+{"time":"2024-11-24T19:21:34.021373786Z","level":"INFO","msg":"stream: closed","id":"gjdesrdm"}

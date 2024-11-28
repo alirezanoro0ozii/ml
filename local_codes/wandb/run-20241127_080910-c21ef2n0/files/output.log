@@ -1,0 +1,109 @@
+Some weights of EsmModel were not initialized from the model checkpoint at facebook/esm1b_t33_650M_UR50S and are newly initialized: ['esm.pooler.dense.bias', 'esm.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Trainable parameters: 0.657924 M
+Total parameters: 653.014425 M
+ESM1b(
+  (esm): EsmModel(
+    (embeddings): EsmEmbeddings(
+      (word_embeddings): Embedding(33, 1280, padding_idx=1)
+      (layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+      (dropout): Dropout(p=0.0, inplace=False)
+      (position_embeddings): Embedding(1026, 1280, padding_idx=1)
+    )
+    (encoder): EsmEncoder(
+      (layer): ModuleList(
+        (0-32): 33 x EsmLayer(
+          (attention): EsmAttention(
+            (self): EsmSelfAttention(
+              (query): Linear(in_features=1280, out_features=1280, bias=True)
+              (key): Linear(in_features=1280, out_features=1280, bias=True)
+              (value): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): EsmSelfOutput(
+              (dense): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          )
+          (intermediate): EsmIntermediate(
+            (dense): Linear(in_features=1280, out_features=5120, bias=True)
+          )
+          (output): EsmOutput(
+            (dense): Linear(in_features=5120, out_features=1280, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+          (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+      (emb_layer_norm_after): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+    )
+    (pooler): EsmPooler(
+      (dense): Linear(in_features=1280, out_features=1280, bias=True)
+      (activation): Tanh()
+    )
+    (contact_head): EsmContactPredictionHead(
+      (regression): Linear(in_features=660, out_features=1, bias=True)
+      (activation): Sigmoid()
+    )
+  )
+  (layer1): Linear(in_features=1280, out_features=512, bias=True)
+  (relu): ReLU()
+  (layer2): Linear(in_features=512, out_features=4, bias=True)
+)
+Successfully loaded checkpoint from epoch 99999
+Metrics at checkpoint: {'train_loss': 0.08703388193866704, 'train_accuracy': 0.972, 'train_f1_micro': 0.972, 'train_f1_macro': 0.6321182114729275, 'train_confusion_matrix': array([[    0,     0,     0,     0],
+       [    0,  1811,   184,     0],
+       [    0,   157, 13741,     1],
+       [    0,     8,    98,     0]]), 'val_loss': 0.06967763296049088, 'val_accuracy': 0.9805, 'val_f1_micro': 0.9805, 'val_f1_macro': 0.5561100310384487, 'val_confusion_matrix': array([[    0,     0,     0,     0],
+       [    0,   220,    18,     0],
+       [    0,   180, 15468,     0],
+       [    0,    11,   103,     0]]), 'epoch': 100000, 'current_portion': 0.0625, 'lr': 0.0008965153869722053}
+800it [00:36, 21.88it/s]
+Successfully loaded checkpoint from epoch 99999
+Metrics at checkpoint: {'train_loss': 0.08703388193866704, 'train_accuracy': 0.972, 'train_f1_micro': 0.972, 'train_f1_macro': 0.6321182114729275, 'train_confusion_matrix': array([[    0,     0,     0,     0],
+       [    0,  1811,   184,     0],
+       [    0,   157, 13741,     1],
+       [    0,     8,    98,     0]]), 'val_loss': 0.06967763296049088, 'val_accuracy': 0.9805, 'val_f1_micro': 0.9805, 'val_f1_macro': 0.5561100310384487, 'val_confusion_matrix': array([[    0,     0,     0,     0],
+       [    0,   220,    18,     0],
+       [    0,   180, 15468,     0],
+       [    0,    11,   103,     0]]), 'epoch': 100000, 'current_portion': 0.0625, 'lr': 0.0008965153869722053}
+800it [00:36, 21.70it/s]
+0.005
+0.0034812880765883376
+0.005
+[[  0 362  38]
+ [  0   4 396]
+ [  0   0   0]]
+Successfully loaded checkpoint from epoch 99999
+Metrics at checkpoint: {'train_loss': 0.08703388193866704, 'train_accuracy': 0.972, 'train_f1_micro': 0.972, 'train_f1_macro': 0.6321182114729275, 'train_confusion_matrix': array([[    0,     0,     0,     0],
+       [    0,  1811,   184,     0],
+       [    0,   157, 13741,     1],
+       [    0,     8,    98,     0]]), 'val_loss': 0.06967763296049088, 'val_accuracy': 0.9805, 'val_f1_micro': 0.9805, 'val_f1_macro': 0.5561100310384487, 'val_confusion_matrix': array([[    0,     0,     0,     0],
+       [    0,   220,    18,     0],
+       [    0,   180, 15468,     0],
+       [    0,    11,   103,     0]]), 'epoch': 100000, 'current_portion': 0.0625, 'lr': 0.0008965153869722053}
+800it [00:36, 21.72it/s]
+0.015
+0.012445807114226938
+0.015
+[[  0 367  33]
+ [  0   9 388]
+ [  0   0   3]]
+Average Loss: 25.5998
+Accuracy: 0.0150, 0.0150
+
+Sample of results:
+                                            sequence  label  \
+0  PQITLWQRPLVTIRVGGLQKEALLDTGADDTVLEEIDLPGRWKPKM...      0
+1  CKELEKDGKISKIGPENPYNTPIFAIKKKNSTKWRKLVDFRELNKR...      0
+2  MGARASVLSGGKLDAWEKIRLRPGGKKKYRMKHLVWASRELDRFAL...      0
+3  PQITLWQRPLVTVXXGGQXKEALLDTGADDTVLEDINLPGKWKPKM...      0
+4  PQITLWQRPXVXIKIGGQLKEALLDTGADDTVLEEMNLPGKWKPKM...      0
+
+                                             outputs  pred       loss
+0  [[tensor(-63.0561), tensor(3.1436), tensor(-13...     1  66.199646
+1  [[tensor(-36.5593), tensor(4.4304), tensor(-8....     1  40.989700
+2  [[tensor(-97.1021), tensor(-0.7411), tensor(-1...     1  96.360977
+3  [[tensor(-67.0278), tensor(1.1112), tensor(-16...     1  68.138939
+4  [[tensor(-75.4195), tensor(-0.0390), tensor(-1...     1  75.380539

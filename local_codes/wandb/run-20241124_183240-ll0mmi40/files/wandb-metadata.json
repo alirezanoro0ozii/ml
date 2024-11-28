@@ -1,0 +1,59 @@
+{
+  "os": "Linux-6.5.0-35-generic-x86_64-with-glibc2.35",
+  "python": "3.10.14",
+  "startedAt": "2024-11-24T18:32:40.450325Z",
+  "program": "Alireza/local_codes/18_CNN_Mid_level.ipynb",
+  "git": {
+    "remote": "https://github.com/alirezanoro0ozii/ml.git",
+    "commit": "a1b7a1367b8b37ca83cff561f111616aa320ba8b"
+  },
+  "email": "alirezanor@310.ai",
+  "root": "/home/aac/Alireza/local_codes",
+  "host": "47f1c2b6-7872-4206-a993-a4263e59675f-5b6dc6469b-tg6n8",
+  "username": "root",
+  "executable": "/opt/conda/envs/py_3.10/bin/python",
+  "cpu_count": 128,
+  "cpu_count_logical": 128,
+  "gpu_count": 2,
+  "disk": {
+    "/": {
+      "total": "943441641472",
+      "used": "519545962496"
+    }
+  },
+  "memory": {
+    "total": "1082017296384"
+  },
+  "cpu": {
+    "count": 128,
+    "countLogical": 128
+  },
+  "gpu_amd": [
+    {
+      "id": "0x740c",
+      "uniqueId": "0x9bb7f848558a296d",
+      "vbiosVersion": "113-D65209-073",
+      "performanceLevel": "auto",
+      "maxPower": "560.0",
+      "series": "AMD INSTINCT MI250 (MCM) OAM AC MBA",
+      "model": "0x740c",
+      "vendor": "Advanced Micro Devices, Inc. [AMD/ATI]",
+      "sku": "D65209",
+      "sclkRange": "500Mhz - 1700Mhz",
+      "mclkRange": "400Mhz - 1600Mhz"
+    },
+    {
+      "id": "0x740c",
+      "uniqueId": "0xfa9064a17324db42",
+      "vbiosVersion": "113-D65209-073",
+      "performanceLevel": "auto",
+      "maxPower": "0.0",
+      "series": "AMD INSTINCT MI250 (MCM) OAM AC MBA",
+      "model": "0x740c",
+      "vendor": "Advanced Micro Devices, Inc. [AMD/ATI]",
+      "sku": "D65209",
+      "sclkRange": "500Mhz - 1700Mhz",
+      "mclkRange": "400Mhz - 1600Mhz"
+    }
+  ]
+}

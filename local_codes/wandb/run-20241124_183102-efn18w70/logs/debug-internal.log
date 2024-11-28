@@ -1,0 +1,16 @@
+{"time":"2024-11-24T18:31:03.759223605Z","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-24T18:31:03.759258975Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241124_183102-efn18w70/logs/debug-core.log"}
+{"time":"2024-11-24T18:31:03.883271814Z","level":"INFO","msg":"created new stream","id":"efn18w70"}
+{"time":"2024-11-24T18:31:03.883332144Z","level":"INFO","msg":"stream: started","id":"efn18w70"}
+{"time":"2024-11-24T18:31:03.883395164Z","level":"INFO","msg":"writer: Do: started","stream_id":"efn18w70"}
+{"time":"2024-11-24T18:31:03.883430764Z","level":"INFO","msg":"handler: started","stream_id":"efn18w70"}
+{"time":"2024-11-24T18:31:03.883477214Z","level":"INFO","msg":"sender: started","stream_id":"efn18w70"}
+{"time":"2024-11-24T18:31:04.086982961Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-24T18:32:08.04841015Z","level":"INFO","msg":"stream: closing","id":"efn18w70"}
+{"time":"2024-11-24T18:32:08.04859382Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-24T18:32:08.050141651Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-24T18:32:08.410690153Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-24T18:32:08.526950558Z","level":"INFO","msg":"handler: closed","stream_id":"efn18w70"}
+{"time":"2024-11-24T18:32:08.526982198Z","level":"INFO","msg":"writer: Close: closed","stream_id":"efn18w70"}
+{"time":"2024-11-24T18:32:08.527037968Z","level":"INFO","msg":"sender: closed","stream_id":"efn18w70"}
+{"time":"2024-11-24T18:32:08.52923237Z","level":"INFO","msg":"stream: closed","id":"efn18w70"}

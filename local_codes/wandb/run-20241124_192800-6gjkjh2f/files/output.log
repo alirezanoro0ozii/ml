@@ -1,0 +1,455 @@
+/opt/conda/envs/py_3.10/lib/python3.10/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+Loaded dictionary.
+first level # of Classes 1276825
+model: 459.795081 M parameters
+EnhancedProteinCNN(
+  (embedding): Embedding(25, 128, padding_idx=0)
+  (feature_dense): Linear(in_features=3, out_features=128, bias=True)
+  (global_feature_dense): Linear(in_features=28, out_features=128, bias=True)
+  (initial_conv): Sequential(
+    (0): Conv1d(128, 2000, kernel_size=(21,), stride=(1,), padding=same)
+    (1): ReLU()
+    (2): BatchNorm1d(2000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (residual_blocks): ModuleList(
+    (0-4): 5 x ResidualBlock(
+      (layers): Sequential(
+        (0): Conv1d(2000, 1000, kernel_size=(1,), stride=(1,))
+        (1): ReLU()
+        (2): BatchNorm1d(1000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (3): Conv1d(1000, 1000, kernel_size=(21,), stride=(1,), padding=same)
+        (4): ReLU()
+        (5): BatchNorm1d(1000, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (6): Conv1d(1000, 2000, kernel_size=(1,), stride=(1,))
+      )
+    )
+  )
+  (pool): AdaptiveMaxPool1d(output_size=1)
+  (fc1): Linear(in_features=2128, out_features=512, bias=True)
+  (fc2): Linear(in_features=512, out_features=256, bias=True)
+  (fc3): Linear(in_features=256, out_features=1276825, bias=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (layer_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+)
+  3%|▎         | 2999/100000 [1:47:32<50:35:34,  1.88s/it]   
+Epoch [1000/100000]
+First Position Metrics:
+Train Loss: 32.0788, Train Accuracy: 0.0046
+Train Precision (micro): 0.0046, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0046, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0046, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 11.2562, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [2000/100000]
+First Position Metrics:
+Train Loss: 54.5968, Train Accuracy: 0.0051
+Train Precision (micro): 0.0051, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0051, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0051, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 11.1065, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [3000/100000]
+First Position Metrics:
+Train Loss: 76.6682, Train Accuracy: 0.0052
+Train Precision (micro): 0.0052, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0052, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0052, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.9646, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [4000/100000]
+First Position Metrics:
+Train Loss: 98.5535, Train Accuracy: 0.0047
+Train Precision (micro): 0.0047, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0047, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0047, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.7333, Val Accuracy: 0.0040
+Val Precision (micro): 0.0040, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0040, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0040, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [5000/100000]
+First Position Metrics:
+Train Loss: 120.1199, Train Accuracy: 0.0047
+Train Precision (micro): 0.0047, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0047, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0047, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.6502, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [6000/100000]
+First Position Metrics:
+Train Loss: 141.4306, Train Accuracy: 0.0048
+Train Precision (micro): 0.0048, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0048, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0048, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.6493, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [7000/100000]
+First Position Metrics:
+Train Loss: 164.5604, Train Accuracy: 0.0045
+Train Precision (micro): 0.0045, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0045, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0045, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.5071, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [8000/100000]
+First Position Metrics:
+Train Loss: 187.6277, Train Accuracy: 0.0052
+Train Precision (micro): 0.0052, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0052, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0052, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.4212, Val Accuracy: 0.0047
+Val Precision (micro): 0.0047, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0047, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0047, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [9000/100000]
+First Position Metrics:
+Train Loss: 210.1652, Train Accuracy: 0.0054
+Train Precision (micro): 0.0054, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0054, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0054, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.3768, Val Accuracy: 0.0040
+Val Precision (micro): 0.0040, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0040, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0040, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [10000/100000]
+First Position Metrics:
+Train Loss: 231.0216, Train Accuracy: 0.0043
+Train Precision (micro): 0.0043, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0043, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0043, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.3609, Val Accuracy: 0.0040
+Val Precision (micro): 0.0040, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0040, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0040, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [11000/100000]
+First Position Metrics:
+Train Loss: 251.7518, Train Accuracy: 0.0042
+Train Precision (micro): 0.0042, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0042, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0042, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.3603, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [12000/100000]
+First Position Metrics:
+Train Loss: 272.4656, Train Accuracy: 0.0049
+Train Precision (micro): 0.0049, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0049, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0049, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.2869, Val Accuracy: 0.0047
+Val Precision (micro): 0.0047, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0047, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0047, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [13000/100000]
+First Position Metrics:
+Train Loss: 293.0500, Train Accuracy: 0.0053
+Train Precision (micro): 0.0053, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0053, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0053, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.2364, Val Accuracy: 0.0047
+Val Precision (micro): 0.0047, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0047, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0047, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [14000/100000]
+First Position Metrics:
+Train Loss: 313.4993, Train Accuracy: 0.0051
+Train Precision (micro): 0.0051, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0051, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0051, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.1991, Val Accuracy: 0.0046
+Val Precision (micro): 0.0046, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0046, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0046, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [15000/100000]
+First Position Metrics:
+Train Loss: 333.9409, Train Accuracy: 0.0047
+Train Precision (micro): 0.0047, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0047, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0047, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.1719, Val Accuracy: 0.0040
+Val Precision (micro): 0.0040, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0040, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0040, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [16000/100000]
+First Position Metrics:
+Train Loss: 354.3143, Train Accuracy: 0.0049
+Train Precision (micro): 0.0049, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0049, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0049, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.1540, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [17000/100000]
+First Position Metrics:
+Train Loss: 374.5937, Train Accuracy: 0.0050
+Train Precision (micro): 0.0050, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0050, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0050, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.1410, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [18000/100000]
+First Position Metrics:
+Train Loss: 394.8905, Train Accuracy: 0.0053
+Train Precision (micro): 0.0053, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0053, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0053, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.1327, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [19000/100000]
+First Position Metrics:
+Train Loss: 415.1665, Train Accuracy: 0.0050
+Train Precision (micro): 0.0050, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0050, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0050, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.1281, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [20000/100000]
+First Position Metrics:
+Train Loss: 435.4311, Train Accuracy: 0.0050
+Train Precision (micro): 0.0050, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0050, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0050, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.1262, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [21000/100000]
+First Position Metrics:
+Train Loss: 455.6756, Train Accuracy: 0.0049
+Train Precision (micro): 0.0049, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0049, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0049, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.1260, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [22000/100000]
+First Position Metrics:
+Train Loss: 475.9676, Train Accuracy: 0.0048
+Train Precision (micro): 0.0048, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0048, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0048, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.1238, Val Accuracy: 0.0040
+Val Precision (micro): 0.0040, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0040, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0040, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [23000/100000]
+First Position Metrics:
+Train Loss: 496.2106, Train Accuracy: 0.0045
+Train Precision (micro): 0.0045, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0045, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0045, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.1192, Val Accuracy: 0.0039
+Val Precision (micro): 0.0039, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0039, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0039, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [24000/100000]
+First Position Metrics:
+Train Loss: 516.4778, Train Accuracy: 0.0053
+Train Precision (micro): 0.0053, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0053, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0053, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.1127, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [25000/100000]
+First Position Metrics:
+Train Loss: 536.7438, Train Accuracy: 0.0046
+Train Precision (micro): 0.0046, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0046, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0046, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.1077, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [26000/100000]
+First Position Metrics:
+Train Loss: 558.4477, Train Accuracy: 0.0047
+Train Precision (micro): 0.0047, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0047, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0047, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.1023, Val Accuracy: 0.0040
+Val Precision (micro): 0.0040, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0040, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0040, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [27000/100000]
+First Position Metrics:
+Train Loss: 578.6732, Train Accuracy: 0.0053
+Train Precision (micro): 0.0053, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0053, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0053, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.1001, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [28000/100000]
+First Position Metrics:
+Train Loss: 598.8594, Train Accuracy: 0.0057
+Train Precision (micro): 0.0057, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0057, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0057, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.0976, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [29000/100000]
+First Position Metrics:
+Train Loss: 619.0754, Train Accuracy: 0.0052
+Train Precision (micro): 0.0052, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0052, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0052, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.0953, Val Accuracy: 0.0046
+Val Precision (micro): 0.0046, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0046, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0046, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------
+Epoch [30000/100000]
+First Position Metrics:
+Train Loss: 639.3178, Train Accuracy: 0.0047
+Train Precision (micro): 0.0047, Train Precision (macro): 0.0000
+Train Recall (micro): 0.0047, Train Recall (macro): 0.0000
+Train F1 (micro): 0.0047, Train F1 (macro): 0.0000
+
+First Position Validation Metrics:
+Val Loss: 10.0904, Val Accuracy: 0.0053
+Val Precision (micro): 0.0053, Val Precision (macro): 0.0000
+Val Recall (micro): 0.0053, Val Recall (macro): 0.0001
+Val F1 (micro): 0.0053, Val F1 (macro): 0.0000
+
+--------------------------------------------------------------------------------

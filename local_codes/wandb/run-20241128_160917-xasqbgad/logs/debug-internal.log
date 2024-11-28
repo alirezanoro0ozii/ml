@@ -1,0 +1,17 @@
+{"time":"2024-11-28T16:09:19.34710043Z","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-28T16:09:19.34713578Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241128_160917-xasqbgad/logs/debug-core.log"}
+{"time":"2024-11-28T16:09:19.473962841Z","level":"INFO","msg":"created new stream","id":"xasqbgad"}
+{"time":"2024-11-28T16:09:19.474053371Z","level":"INFO","msg":"stream: started","id":"xasqbgad"}
+{"time":"2024-11-28T16:09:19.474159581Z","level":"INFO","msg":"sender: started","stream_id":"xasqbgad"}
+{"time":"2024-11-28T16:09:19.474142831Z","level":"INFO","msg":"writer: Do: started","stream_id":"xasqbgad"}
+{"time":"2024-11-28T16:09:19.474217701Z","level":"INFO","msg":"handler: started","stream_id":"xasqbgad"}
+{"time":"2024-11-28T16:09:19.652822496Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-28T16:10:26.003753845Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-28T16:10:26.005202625Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-28T16:10:26.444793395Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-28T16:10:26.537961339Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-11-28T16:10:27.558987306Z","level":"INFO","msg":"stream: closing","id":"xasqbgad"}
+{"time":"2024-11-28T16:10:27.559024506Z","level":"INFO","msg":"handler: closed","stream_id":"xasqbgad"}
+{"time":"2024-11-28T16:10:27.559039556Z","level":"INFO","msg":"writer: Close: closed","stream_id":"xasqbgad"}
+{"time":"2024-11-28T16:10:27.559142256Z","level":"INFO","msg":"sender: closed","stream_id":"xasqbgad"}
+{"time":"2024-11-28T16:10:27.560893157Z","level":"INFO","msg":"stream: closed","id":"xasqbgad"}

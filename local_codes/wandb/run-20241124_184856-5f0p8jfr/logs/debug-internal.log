@@ -1,0 +1,31 @@
+{"time":"2024-11-24T18:48:58.174859906Z","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-24T18:48:58.174895826Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241124_184856-5f0p8jfr/logs/debug-core.log"}
+{"time":"2024-11-24T18:48:58.311408711Z","level":"INFO","msg":"created new stream","id":"5f0p8jfr"}
+{"time":"2024-11-24T18:48:58.311449071Z","level":"INFO","msg":"stream: started","id":"5f0p8jfr"}
+{"time":"2024-11-24T18:48:58.311500401Z","level":"INFO","msg":"writer: Do: started","stream_id":"5f0p8jfr"}
+{"time":"2024-11-24T18:48:58.311592221Z","level":"INFO","msg":"sender: started","stream_id":"5f0p8jfr"}
+{"time":"2024-11-24T18:48:58.311649241Z","level":"INFO","msg":"handler: started","stream_id":"5f0p8jfr"}
+{"time":"2024-11-24T18:48:58.472293318Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-24T18:48:58.721947207Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T18:49:04.232529014Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T18:50:18.663795196Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T18:58:23.40892211Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T18:58:23.913981501Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:02:52.905938746Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:03:12.217945085Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:04:00.96507319Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:04:01.005913019Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:04:01.750506654Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:04:01.95140458Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:04:02.258692986Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:04:02.261952928Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:04:03.003001851Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-24T19:11:59.736042515Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-24T19:11:59.740990618Z","level":"INFO","msg":"stream: closing","id":"5f0p8jfr"}
+{"time":"2024-11-24T19:11:59.741059268Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-24T19:11:59.742144698Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-24T19:12:01.023153519Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-24T19:12:01.120268425Z","level":"INFO","msg":"handler: closed","stream_id":"5f0p8jfr"}
+{"time":"2024-11-24T19:12:01.120373895Z","level":"INFO","msg":"sender: closed","stream_id":"5f0p8jfr"}
+{"time":"2024-11-24T19:12:01.120359465Z","level":"INFO","msg":"writer: Close: closed","stream_id":"5f0p8jfr"}
+{"time":"2024-11-24T19:12:01.122836137Z","level":"INFO","msg":"stream: closed","id":"5f0p8jfr"}

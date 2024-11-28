@@ -1,0 +1,340 @@
+Some weights of EsmModel were not initialized from the model checkpoint at facebook/esm1b_t33_650M_UR50S and are newly initialized: ['esm.pooler.dense.bias', 'esm.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Trainable parameters: 0.986628 M
+Total parameters: 653.343129 M
+ESM1b(
+  (esm): EsmModel(
+    (embeddings): EsmEmbeddings(
+      (word_embeddings): Embedding(33, 1280, padding_idx=1)
+      (layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+      (dropout): Dropout(p=0.0, inplace=False)
+      (position_embeddings): Embedding(1026, 1280, padding_idx=1)
+    )
+    (encoder): EsmEncoder(
+      (layer): ModuleList(
+        (0-32): 33 x EsmLayer(
+          (attention): EsmAttention(
+            (self): EsmSelfAttention(
+              (query): Linear(in_features=1280, out_features=1280, bias=True)
+              (key): Linear(in_features=1280, out_features=1280, bias=True)
+              (value): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (output): EsmSelfOutput(
+              (dense): Linear(in_features=1280, out_features=1280, bias=True)
+              (dropout): Dropout(p=0.0, inplace=False)
+            )
+            (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          )
+          (intermediate): EsmIntermediate(
+            (dense): Linear(in_features=1280, out_features=5120, bias=True)
+          )
+          (output): EsmOutput(
+            (dense): Linear(in_features=5120, out_features=1280, bias=True)
+            (dropout): Dropout(p=0.0, inplace=False)
+          )
+          (LayerNorm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+      (emb_layer_norm_after): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+    )
+    (pooler): EsmPooler(
+      (dense): Linear(in_features=1280, out_features=1280, bias=True)
+      (activation): Tanh()
+    )
+    (contact_head): EsmContactPredictionHead(
+      (regression): Linear(in_features=660, out_features=1, bias=True)
+      (activation): Sigmoid()
+    )
+  )
+  (attention): Sequential(
+    (0): Linear(in_features=1280, out_features=256, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=256, out_features=1, bias=True)
+  )
+  (layer1): Linear(in_features=1280, out_features=512, bias=True)
+  (layer_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  (relu): ReLU()
+  (dropout): Dropout(p=0.1, inplace=False)
+  (layer2): Linear(in_features=512, out_features=3, bias=True)
+)
+{0: 2, 1: 33, 2: 1298, 3: 5633, 4: 3733, 5: 5181, 6: 5444, 7: 15383, 8: 65228, 9: 59006, 10: 53852, 11: 141571, 12: 20369, 13: 13615, 14: 17388, 15: 32162, 16: 35564, 17: 34333, 18: 33100, 19: 43499, 20: 61507, 21: 57902, 22: 31211, 23: 32827, 24: 107510, 25: 82470, 26: 96454, 27: 90631, 28: 85202, 29: 70506, 30: 71899, 31: 26726, 32: 11716, 33: 6444, 34: 2510, 35: 872, 36: 4}
+
+Taxonomic ranks sorted by number of taxa:
+11: 141571
+24: 107510
+26: 96454
+27: 90631
+28: 85202
+25: 82470
+30: 71899
+29: 70506
+8: 65228
+20: 61507
+9: 59006
+21: 57902
+10: 53852
+19: 43499
+16: 35564
+17: 34333
+18: 33100
+23: 32827
+15: 32162
+22: 31211
+31: 26726
+12: 20369
+14: 17388
+7: 15383
+13: 13615
+32: 11716
+33: 6444
+3: 5633
+6: 5444
+5: 5181
+4: 3733
+34: 2510
+2: 1298
+35: 872
+1: 33
+36: 4
+0: 2
+  0%|          | 9/100000 [00:11<35:12:56,  1.27s/it]
+Epoch [10/100000]
+Train Loss: 0.6658, Train Accuracy: 0.6375
+Train F1 (micro): 0.6375, Train F1 (macro): 0.4474
+Train Confusion Matrix:
+[[ 0  0  0  0]
+ [ 8 51 21  0]
+ [ 8 21 51  0]
+ [ 0  0  0  0]]
+  0%|          | 9/100000 [00:11<34:35:14,  1.25s/it]
+Epoch [10/100000]
+Train Loss: 0.4655, Train Accuracy: 0.8187
+{0: 2, 1: 33, 2: 1298, 3: 5633, 4: 3733, 5: 5181, 6: 5444, 7: 15383, 8: 65228, 9: 59006, 10: 53852, 11: 141571, 12: 20369, 13: 13615, 14: 17388, 15: 32162, 16: 35564, 17: 34333, 18: 33100, 19: 43499, 20: 61507, 21: 57902, 22: 31211, 23: 32827, 24: 107510, 25: 82470, 26: 96454, 27: 90631, 28: 85202, 29: 70506, 30: 71899, 31: 26726, 32: 11716, 33: 6444, 34: 2510, 35: 872, 36: 4}
+
+Taxonomic ranks sorted by number of taxa:
+11: 141571
+24: 107510
+26: 96454
+27: 90631
+28: 85202
+25: 82470
+30: 71899
+29: 70506
+8: 65228
+20: 61507
+9: 59006
+21: 57902
+10: 53852
+19: 43499
+16: 35564
+17: 34333
+18: 33100
+23: 32827
+15: 32162
+22: 31211
+31: 26726
+12: 20369
+14: 17388
+7: 15383
+13: 13615
+32: 11716
+33: 6444
+3: 5633
+6: 5444
+5: 5181
+4: 3733
+34: 2510
+2: 1298
+35: 872
+1: 33
+36: 4
+0: 2
+  0%|          | 9/100000 [00:32<100:52:20,  3.63s/it]
+Epoch [10/100000]
+Train Loss: 0.4297, Train Accuracy: 0.8000
+  0%|          | 9/100000 [00:54<167:02:40,  6.01s/it]
+Epoch [10/100000]
+Train Loss: 0.3414, Train Accuracy: 0.8562
+Val Loss: 0.2994, Val Accuracy: 0.8641
+Val F1 (micro): 0.8641, Val F1 (macro): 0.8634
+Val Confusion Matrix:
+[[299  21]
+ [ 66 254]]
+  0%|          | 49/100000 [04:10<48:03:44,  1.73s/it] 
+Epoch [10/100000]
+Train Loss: 0.2892, Train Accuracy: 0.8812
+Val Loss: 0.2278, Val Accuracy: 0.9172
+Val F1 (micro): 0.9172, Val F1 (macro): 0.9170
+Val Confusion Matrix:
+[[279  41]
+ [ 12 308]]
+Epoch [20/100000]
+Train Loss: 0.2607, Train Accuracy: 0.8688
+Val Loss: 0.2273, Val Accuracy: 0.9172
+Val F1 (micro): 0.9172, Val F1 (macro): 0.9170
+Val Confusion Matrix:
+[[279  41]
+ [ 12 308]]
+Epoch [30/100000]
+Train Loss: 0.2576, Train Accuracy: 0.8875
+Val Loss: 0.2910, Val Accuracy: 0.8844
+Val F1 (micro): 0.8844, Val F1 (macro): 0.8835
+Val Confusion Matrix:
+[[256  64]
+ [ 10 310]]
+Epoch [40/100000]
+Train Loss: 0.3140, Train Accuracy: 0.8938
+Val Loss: 0.2879, Val Accuracy: 0.8875
+Val F1 (micro): 0.8875, Val F1 (macro): 0.8868
+Val Confusion Matrix:
+[[258  62]
+ [ 10 310]]
+Epoch [50/100000]
+Train Loss: 0.3980, Train Accuracy: 0.8562
+Val Loss: 0.3342, Val Accuracy: 0.8531
+Val F1 (micro): 0.8531, Val F1 (macro): 0.8506
+Val Confusion Matrix:
+[[231  89]
+ [  5 315]]
+Epoch [60/100000]
+Train Loss: 0.3100, Train Accuracy: 0.8625
+Val Loss: 0.2511, Val Accuracy: 0.9031
+Val F1 (micro): 0.9031, Val F1 (macro): 0.9031
+Val Confusion Matrix:
+[[291  29]
+ [ 33 287]]
+Epoch [70/100000]
+Train Loss: 0.3123, Train Accuracy: 0.8625
+Val Loss: 0.2299, Val Accuracy: 0.9078
+Val F1 (micro): 0.9078, Val F1 (macro): 0.9076
+Val Confusion Matrix:
+[[277  43]
+ [ 16 304]]
+Epoch [80/100000]
+Train Loss: 0.2697, Train Accuracy: 0.9000
+Val Loss: 0.2298, Val Accuracy: 0.9078
+Val F1 (micro): 0.9078, Val F1 (macro): 0.9076
+Val Confusion Matrix:
+[[277  43]
+ [ 16 304]]
+Epoch [90/100000]
+Train Loss: 0.2454, Train Accuracy: 0.8688
+Val Loss: 0.2724, Val Accuracy: 0.8812
+Val F1 (micro): 0.8812, Val F1 (macro): 0.8800
+Val Confusion Matrix:
+[[249  71]
+ [  5 315]]
+Epoch [100/100000]
+Train Loss: 0.2139, Train Accuracy: 0.9000
+Val Loss: 0.2309, Val Accuracy: 0.9141
+Val F1 (micro): 0.9141, Val F1 (macro): 0.9140
+Val Confusion Matrix:
+[[302  18]
+ [ 37 283]]
+Epoch [110/100000]
+Train Loss: 0.2199, Train Accuracy: 0.9000
+Val Loss: 0.2407, Val Accuracy: 0.9094
+Val F1 (micro): 0.9094, Val F1 (macro): 0.9089
+Val Confusion Matrix:
+[[269  51]
+ [  7 313]]
+Epoch [120/100000]
+Train Loss: 0.1930, Train Accuracy: 0.9250
+Val Loss: 0.2246, Val Accuracy: 0.9172
+Val F1 (micro): 0.9172, Val F1 (macro): 0.9172
+Val Confusion Matrix:
+[[290  30]
+ [ 23 297]]
+Epoch [130/100000]
+Train Loss: 0.1975, Train Accuracy: 0.9125
+Val Loss: 0.2066, Val Accuracy: 0.9109
+Val F1 (micro): 0.9109, Val F1 (macro): 0.9107
+Val Confusion Matrix:
+[[276  44]
+ [ 13 307]]
+Epoch [140/100000]
+Train Loss: 0.2280, Train Accuracy: 0.9000
+Val Loss: 0.2036, Val Accuracy: 0.9125
+Val F1 (micro): 0.9125, Val F1 (macro): 0.9123
+Val Confusion Matrix:
+[[277  43]
+ [ 13 307]]
+Epoch [150/100000]
+Train Loss: 0.1688, Train Accuracy: 0.9500
+Val Loss: 0.2010, Val Accuracy: 0.9187
+Val F1 (micro): 0.9187, Val F1 (macro): 0.9186
+Val Confusion Matrix:
+[[281  39]
+ [ 13 307]]
+Epoch [160/100000]
+Train Loss: 0.2866, Train Accuracy: 0.8688
+Val Loss: 0.2009, Val Accuracy: 0.9187
+Val F1 (micro): 0.9187, Val F1 (macro): 0.9186
+Val Confusion Matrix:
+[[281  39]
+ [ 13 307]]
+Epoch [170/100000]
+Train Loss: 0.1926, Train Accuracy: 0.9187
+Val Loss: 0.2110, Val Accuracy: 0.9109
+Val F1 (micro): 0.9109, Val F1 (macro): 0.9107
+Val Confusion Matrix:
+[[275  45]
+ [ 12 308]]
+Epoch [180/100000]
+Train Loss: 0.2985, Train Accuracy: 0.8812
+Val Loss: 0.2066, Val Accuracy: 0.9250
+Val F1 (micro): 0.9250, Val F1 (macro): 0.9250
+Val Confusion Matrix:
+[[293  27]
+ [ 21 299]]
+Epoch [190/100000]
+Train Loss: 0.1876, Train Accuracy: 0.9062
+Val Loss: 0.2144, Val Accuracy: 0.9062
+Val F1 (micro): 0.9062, Val F1 (macro): 0.9060
+Val Confusion Matrix:
+[[274  46]
+ [ 14 306]]
+Epoch [200/100000]
+Train Loss: 0.2527, Train Accuracy: 0.9125
+Val Loss: 0.2181, Val Accuracy: 0.9172
+Val F1 (micro): 0.9172, Val F1 (macro): 0.9171
+Val Confusion Matrix:
+[[283  37]
+ [ 16 304]]
+Epoch [210/100000]
+Train Loss: 0.2250, Train Accuracy: 0.8938
+Val Loss: 0.1938, Val Accuracy: 0.9219
+Val F1 (micro): 0.9219, Val F1 (macro): 0.9218
+Val Confusion Matrix:
+[[285  35]
+ [ 15 305]]
+Epoch [220/100000]
+Train Loss: 0.2880, Train Accuracy: 0.8875
+Val Loss: 0.2265, Val Accuracy: 0.9062
+Val F1 (micro): 0.9062, Val F1 (macro): 0.9061
+Val Confusion Matrix:
+[[304  16]
+ [ 44 276]]
+Epoch [230/100000]
+Train Loss: 0.2926, Train Accuracy: 0.8625
+Val Loss: 0.2390, Val Accuracy: 0.8922
+Val F1 (micro): 0.8922, Val F1 (macro): 0.8913
+Val Confusion Matrix:
+[[256  64]
+ [  5 315]]
+Epoch [240/100000]
+Train Loss: 0.2985, Train Accuracy: 0.8938
+Successfully loaded checkpoint from epoch 229
+Metrics at checkpoint: {'train_loss': 0.2925576142966747, 'train_accuracy': 0.8625, 'train_f1_micro': 0.8625, 'train_f1_macro': 0.8624785122675418, 'train_confusion_matrix': array([[70, 10],
+       [12, 68]]), 'val_loss': 0.23899901956319808, 'val_accuracy': 0.8921875, 'val_f1_micro': 0.8921875, 'val_f1_macro': 0.8912633981665472, 'val_confusion_matrix': array([[256,  64],
+       [  5, 315]]), 'epoch': 230, 'current_portion': 0.5, 'lr': 0.0006041320078089729}
+Successfully loaded checkpoint from epoch 229
+Successfully loaded checkpoint from epoch 229
+{'loss': 0.31030156249999996, 'accuracy': 0.890625, 'f1 macro': 0.8898407608856016, 'f1 micro': 0.890625}
+Successfully loaded checkpoint from epoch 229
+{'loss': 0.2617375, 'accuracy': 0.896875, 'f1 macro': 0.8961355745492815, 'f1 micro': 0.896875}
+Successfully loaded checkpoint from epoch 229
+{'loss': 0.2617375, 'accuracy': 0.896875, 'f1 macro': 0.8961355745492815, 'f1 micro': 0.896875}
+Successfully loaded checkpoint from epoch 229
+{'loss': 1.7385, 'accuracy': 0.0, 'f1 macro': 0.0, 'f1 micro': 0.0}

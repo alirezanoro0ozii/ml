@@ -1,0 +1,50 @@
+{"time":"2024-11-26T17:00:23.141804439Z","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-26T17:00:23.141850339Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241126_170023-tsou8zbo/logs/debug-core.log"}
+{"time":"2024-11-26T17:00:23.267447749Z","level":"INFO","msg":"created new stream","id":"tsou8zbo"}
+{"time":"2024-11-26T17:00:23.267526919Z","level":"INFO","msg":"stream: started","id":"tsou8zbo"}
+{"time":"2024-11-26T17:00:23.267646589Z","level":"INFO","msg":"handler: started","stream_id":"tsou8zbo"}
+{"time":"2024-11-26T17:00:23.268013319Z","level":"INFO","msg":"writer: Do: started","stream_id":"tsou8zbo"}
+{"time":"2024-11-26T17:00:23.268011829Z","level":"INFO","msg":"sender: started","stream_id":"tsou8zbo"}
+{"time":"2024-11-26T17:00:23.468946035Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-26T17:00:23.754008851Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:00:23.754066141Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:00:24.521122687Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:00:24.531531352Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:00:24.533533903Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:00:24.540677096Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:00:32.946781674Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:00:32.953769598Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:00:34.191424778Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:00:34.233856898Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:00:41.697846167Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:03:48.835086901Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:04:24.150001781Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:06:02.872633595Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:06:03.479793585Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:07:06.461520217Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:07:07.261405638Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:09:28.826289672Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:09:28.972807152Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:10:11.842796593Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:10:11.976687557Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:10:23.527733825Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:10:23.673760295Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:14:22.045354059Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:14:22.21560714Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:14:49.198432637Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:14:49.327936559Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:15:41.607995998Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:15:41.768642444Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T17:16:11.611551035Z","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-26T17:16:11.732758502Z","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-26T21:41:08.926391291Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-11-26T22:07:08.951434849Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-11-26T22:07:53.95831421Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-11-27T10:22:13.420620329Z","level":"INFO","msg":"stream: closing","id":"tsou8zbo"}
+{"time":"2024-11-27T10:22:13.420789499Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-27T10:22:13.42326716Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-27T10:22:13.838823528Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-27T10:22:13.959688476Z","level":"INFO","msg":"handler: closed","stream_id":"tsou8zbo"}
+{"time":"2024-11-27T10:22:13.959721246Z","level":"INFO","msg":"writer: Close: closed","stream_id":"tsou8zbo"}
+{"time":"2024-11-27T10:22:13.959762666Z","level":"INFO","msg":"sender: closed","stream_id":"tsou8zbo"}
+{"time":"2024-11-27T10:22:13.962078057Z","level":"INFO","msg":"stream: closed","id":"tsou8zbo"}

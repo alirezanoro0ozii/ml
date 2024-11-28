@@ -1,0 +1,19 @@
+{"time":"2024-11-26T18:46:13.363029689Z","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-26T18:46:13.363064289Z","level":"INFO","msg":"created symlink","path":"/home/aac/Alireza/local_codes/wandb/run-20241126_184611-q85hairx/logs/debug-core.log"}
+{"time":"2024-11-26T18:46:13.49033285Z","level":"INFO","msg":"created new stream","id":"q85hairx"}
+{"time":"2024-11-26T18:46:13.49043662Z","level":"INFO","msg":"stream: started","id":"q85hairx"}
+{"time":"2024-11-26T18:46:13.49048143Z","level":"INFO","msg":"writer: Do: started","stream_id":"q85hairx"}
+{"time":"2024-11-26T18:46:13.49051027Z","level":"INFO","msg":"handler: started","stream_id":"q85hairx"}
+{"time":"2024-11-26T18:46:13.49053881Z","level":"INFO","msg":"sender: started","stream_id":"q85hairx"}
+{"time":"2024-11-26T18:46:13.818246276Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-26T19:15:59.371581454Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-11-26T22:08:59.513508569Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2024-11-27T07:36:30.719659892Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-27T07:36:30.720853242Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-27T07:36:31.399874616Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-27T07:36:31.510607129Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-11-27T07:36:32.531481866Z","level":"INFO","msg":"stream: closing","id":"q85hairx"}
+{"time":"2024-11-27T07:36:32.531527056Z","level":"INFO","msg":"handler: closed","stream_id":"q85hairx"}
+{"time":"2024-11-27T07:36:32.531544616Z","level":"INFO","msg":"writer: Close: closed","stream_id":"q85hairx"}
+{"time":"2024-11-27T07:36:32.531590066Z","level":"INFO","msg":"sender: closed","stream_id":"q85hairx"}
+{"time":"2024-11-27T07:36:32.534111787Z","level":"INFO","msg":"stream: closed","id":"q85hairx"}
