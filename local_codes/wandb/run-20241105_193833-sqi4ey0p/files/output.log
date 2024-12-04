@@ -1,2 +1,0 @@
-/opt/conda/envs/py_3.10/lib/python3.10/site-packages/torch/nn/functional.py:5504: UserWarning: 1Torch was not compiled with memory efficient attention. (Triggered internally at /var/lib/jenkins/pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:505.)
-  attn_output = scaled_dot_product_attention(q, k, v, attn_mask, dropout_p, is_causal)

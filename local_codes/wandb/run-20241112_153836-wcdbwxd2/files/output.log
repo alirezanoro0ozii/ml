@@ -1,3 +1,0 @@
-model: 164.006912 M parameters
-cuda:1
-../checkpoints/esm_hierarchy_checkpoints
