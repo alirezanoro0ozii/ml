@@ -12,3 +12,4 @@
 # Even if they are in subdirectories
 !local_codes/**
 !dlp/**
+local_codes/wandb/**
